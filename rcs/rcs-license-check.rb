@@ -181,7 +181,8 @@ module LicenseChecker
 
     # second check on integrity
     content = hash.reject {|k,v| k == :integrity}.to_s
-    check = aes_encrypt(Digest::SHA2.digest(content), Digest::SHA2.digest("€ ∫∑x=1 ∆t π™")).unpack('H*').first
+    #check = aes_encrypt(Digest::SHA2.digest(content), Digest::SHA2.digest("€ ∫∑x=1 ∆t π™")).unpack('H*').first
+    check = aes_encrypt(Digest::SHA2.digest(content), Digest::SHA2.digest("€ ∫∑x=1 ∆t π™ #{values[:version]} √µ…")).unpack('H*').first  #add for hakits
     return false if hash[:integrity] != check
 
     return true
