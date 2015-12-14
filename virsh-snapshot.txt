@@ -1,0 +1,7 @@
+快照 
+shell>virsh 
+virsh>snapshot-create-as  kvm1   kvm1-original         为kvm1虚拟机创建快照 
+virsh>snapshot-list      kvm1                           查看kvm1虚拟机的快照     
+virsh>snapshot-info     kvm1   kvm1-original           查看kvm1虚拟机的快照详细信息 
+virsh>snapshot-revent   kvm1    kvm1-original          恢复kvm1虚拟机的状态到kvm1-original快照时 
+virsh>snapshot-delete   kvm1    kvm1-original          删除kvm1的kvm1-original快照 
