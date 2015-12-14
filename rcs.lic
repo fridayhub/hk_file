@@ -1,0 +1,63 @@
+---
+:type: reusable
+:serial: 'off'
+:version: '9.6'
+:expiry: '2020-12-30 23:59:59 UTC'
+:maintenance: '2020-06-30 23:59:59 UTC'
+:users: 999
+:agents:
+  :total: 999
+  :desktop: 999
+  :mobile: 999
+  :windows:
+  - true
+  - true
+  :osx:
+  - true
+  - true
+  :linux:
+  - true
+  - true
+  :winphone:
+  - true
+  - true
+  :ios:
+  - true
+  - true
+  :blackberry:
+  - true
+  - true
+  :bb10:
+  - true
+  - true
+  :symbian:
+  - true
+  - true
+  :android:
+  - true
+  - true
+:alerting: true
+:profiling: true
+:intelligence: true
+:connectors: true
+:rmi:
+- true
+- true
+:nia:
+- 0
+- true
+:shards: 999
+:exploits: true
+:deletion: true
+:modify: true
+:scout: true
+:ocr: true
+:translation: true
+:archive: 999
+:collectors:
+  :collectors: 999
+  :anonymizers: 999
+:check: ZiSYQjJm
+:digest: f353634e7e16862a0f95a5e6f6ba937d589289f7
+:signature: 91ae101978aef9add5c0b8daeea24b858ef4889d4e2f39204b034d57c1aaa275
+:integrity: b0b1545eb30974a85c5b1cc639808743480e05e1fbcbfb7a1c5e4cf16645dbf392f6253e5b0bf6f06bdd9c0216c9b6d3
