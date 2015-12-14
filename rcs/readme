@@ -1,0 +1,13 @@
+check lic:
+c:\RCS\DB\bin\rcs-db-license -n rcs.lic
+
+general:
+ruby rcs-db-license-gen.rb -g -o temp.lic
+vim rcs.lic 修改版本9.6,功能什么的都改成true,数量改成999
+ruby rcs-db-license-gen.rb -i temp.lic -o rcs.lic 修复一下key
+
+view log:
+cd c:\rcs\ruby\bin
+ruby.exe rcs-db-log
+
+
