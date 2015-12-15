@@ -176,12 +176,12 @@ module LicenseChecker
 
     # first check on signature
     content = hash.reject {|k,v| k == :integrity or k == :signature}.to_s
-    check = Digest::HMAC.hexdigest(content, "??n??u?is ? ?ou si si??", Digest::SHA2)
+    check = Digest::HMAC.hexdigest(content, "əɹnʇɐuƃıs ɐ ʇou sı sıɥʇ", Digest::SHA2)
     return false if hash[:signature] != check
 
     # second check on integrity
     content = hash.reject {|k,v| k == :integrity}.to_s
-    check = aes_encrypt(Digest::SHA2.digest(content), Digest::SHA2.digest("?€ ??x=1 ?t p™")).unpack('H*').first
+    check = aes_encrypt(Digest::SHA2.digest(content), Digest::SHA2.digest("€ ∫∑x=1 ∆t π™")).unpack('H*').first
     return false if hash[:integrity] != check
 
     return true

@@ -50,7 +50,7 @@ class Dongle
 
   VERSION = 20120504
   KEY = "\xB3\xE0\x2A\x88\x30\x69\x67\xAA\x21\x74\x23\xCC\x90\x99\x0C\x3C"
-  DONT_STEAL_RCS = "∆©ƒø†£¢∂øª˚¶∞¨˚˚˙†´ßµ∫√Ïﬁˆ¨Øˆ·‰ﬁÎ¨" #new
+  DONT_STEAL_RCS = "∆©ƒø†£¢∂øª˚¶∞¨˚˚˙†´ßµ∫√Ïﬁˆ¨Øˆ·‰ﬁÎ¨" #new test ok
   #DONT_STEAL_RCS = "?©ƒø†£¢?øª°¶8¨°°?†´ßµ?vÏ?ˆ¨Øˆ·‰?Î¨"
 
 	ERROR_INFO = 1

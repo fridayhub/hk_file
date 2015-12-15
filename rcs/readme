@@ -10,3 +10,6 @@ view log:
 c:\RCS\Ruby\bin>ruby.exe c:\RCS\DB\bin\rcs-db-log
 
 
+when use : rcs-license-patched.lic
+after installed,
+must replace licence with: LICENSE-MASTER-101866151-v9.6.lic
