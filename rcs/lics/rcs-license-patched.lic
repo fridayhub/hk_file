@@ -1,0 +1,64 @@
+---
+:type: reusable
+:version: '9.6'
+:serial: 'off'
+:maintenance: '2020-12-31 23:59:59 UTC'
+:elite: true
+:agents:
+  :total: 6
+  :desktop: 6
+  :windows:
+  - false
+  - true
+  :osx:
+  - false
+  - true
+  :linux:
+  - false
+  - false
+  :mobile: 6
+  :android:
+  - false
+  - true
+  :ios:
+  - false
+  - true
+  :blackberry:
+  - false
+  - true
+  :winphone:
+  - false
+  - true
+  :symbian:
+  - false
+  - false
+:users: .inf
+:shards: 1
+:collectors:
+  :collectors: 3
+  :anonymizers: 9
+:nia:
+- 2
+- true
+:exploits: true
+:gapi: 100
+:rmi:
+- true
+- true
+:alerting: true
+:ocr: true
+:profiling: true
+:intelligence: true
+:archive: 0
+:connectors: true
+:translation: false
+:hostname_sync: false
+:modify: true
+:deletion: false
+:check: Xt0DW33K
+:digest_enc: true
+:crc: $2a$10$HfV3tljrGuvIQFCbjcKDJegC9inUQh4RFv9KmzDAyxtpwZAKGLbxm
+:sha1: 2d167a56b9a93de7d93730a77c84aaffc83fd36d571814a49aef57f33d5a6c6f
+:digest: 6abfa7a351060aac99bbc3e12a05e5c4ec73d22f
+:signature: 768d809c246097ffcb2553b412dd77b2090e69b0ea2f94515512a8bf831673da
+:integrity: ef9950588952794051f85be4ab1c90b28495f773a12fdfe2e8c5d4406df08f515b0c531ec432f00877cbf672822fcb79
