@@ -1,0 +1,2 @@
+core-linux-master:
+install dietlibc: https://github.com/ensc/dietlibc.git

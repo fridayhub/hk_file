@@ -13,3 +13,14 @@ c:\RCS\Ruby\bin>ruby.exe c:\RCS\DB\bin\rcs-db-log
 when use : rcs-license-patched.lic
 after installed,
 must replace licence with: LICENSE-MASTER-101866151-v9.6.lic
+
+1. regenerate the CA and the SSL certificates from the Master Node, with the commands:
+rcs-db-config -G
+rcs-db-config -g
+
+2. from the Collector, stop RCS services and download the new signatures:
+rcs-collector-config -s -u [admin] -p [password]
+rcs-collector-config -t -u [admin] -p [password]
+3. restart RCS services on the Collector and everything will work fine.
+
+the end could use rcs-console connect it
