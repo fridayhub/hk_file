@@ -1,0 +1,1018 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABORT	config.c	30;"	d	file:
+ABORT	config.c	32;"	d	file:
+BIO_DECRYPT	am_synchronize.c	19;"	d	file:
+BIO_ENCRYPT	am_synchronize.c	20;"	d	file:
+BIO_ctrl	runtime.h	176;"	d
+BIO_f_cipher	runtime.h	179;"	d
+BIO_f_md	runtime.h	182;"	d
+BIO_free	runtime.h	185;"	d
+BIO_free_all	runtime.h	188;"	d
+BIO_gets	runtime.h	191;"	d
+BIO_new	runtime.h	194;"	d
+BIO_new_file	runtime.h	197;"	d
+BIO_new_fp	runtime.h	200;"	d
+BIO_pop	runtime.h	203;"	d
+BIO_printf	runtime.h	206;"	d
+BIO_push	runtime.h	209;"	d
+BIO_putfiletime	bioutils.c	/^int BIO_putfiletime(BIO *b, time_t v)$/;"	f
+BIO_puti32	bioutils.c	/^int BIO_puti32(BIO *b, unsigned int v)$/;"	f
+BIO_putn	bioutils.h	21;"	d
+BIO_puts	runtime.h	227;"	d
+BIO_puts16	bioutils.h	16;"	d
+BIO_puts16full	bioutils.c	/^int BIO_puts16full(BIO *b, const char *v, int flags)$/;"	f
+BIO_puts16n	bioutils.h	18;"	d
+BIO_puts16p	bioutils.h	17;"	d
+BIO_puts16pn	bioutils.h	19;"	d
+BIO_putsep	bioutils.h	20;"	d
+BIO_read	runtime.h	212;"	d
+BIO_read_int	am_synchronize.c	/^uint32_t BIO_read_int(BIO *b)$/;"	f
+BIO_read_string	am_synchronize.c	/^int BIO_read_string(BIO *b, char *s, int size)$/;"	f
+BIO_s_mem	runtime.h	218;"	d
+BIO_s_null	runtime.h	221;"	d
+BIO_set_cipher	runtime.h	215;"	d
+BIO_write	runtime.h	224;"	d
+BIO_write_int32	am_synchronize.c	/^int BIO_write_int32(BIO *b, uint32_t i)$/;"	f
+BIO_write_int64	am_synchronize.c	/^int BIO_write_int64(BIO *b, uint64_t i)$/;"	f
+BIO_write_string	am_synchronize.c	/^int BIO_write_string(BIO *b, char *s)$/;"	f
+BITCOIN_WALLET	module_money.c	13;"	d	file:
+BROWSER_CHROME	module_url.c	24;"	d	file:
+BROWSER_FIREFOX	module_url.c	23;"	d	file:
+BROWSER_OPERA	module_url.c	25;"	d	file:
+BROWSER_WEB	module_url.c	26;"	d	file:
+C_ARITH_CODING_SUPPORTED	imgutils_multiver.c	2;"	d	file:
+D_ARITH_CODING_SUPPORTED	imgutils_multiver.c	3;"	d	file:
+ENTRY_INCOMING	module_call.c	19;"	d	file:
+ENTRY_INCOMING	module_chat.c	19;"	d	file:
+ENTRY_LOCAL	module_addressbook.c	19;"	d	file:
+ENTRY_OUTGOING	module_call.c	18;"	d	file:
+ENTRY_OUTGOING	module_chat.c	18;"	d	file:
+ENTRY_REMOTE	module_addressbook.c	18;"	d	file:
+EVENT_BEGIN	eventmanager.h	69;"	d
+EVENT_CONNECTION	eventmanager.h	33;"	d
+EVENT_CONNECTION_P	eventmanager.h	39;"	d
+EVENT_END	eventmanager.h	70;"	d
+EVENT_FLUSH	eventmanager.h	71;"	d
+EVENT_IDLE	eventmanager.h	53;"	d
+EVENT_IDLE_P	eventmanager.h	57;"	d
+EVENT_NONE	eventmanager.h	23;"	d
+EVENT_PROCESS	eventmanager.h	25;"	d
+EVENT_PROCESS_P	eventmanager.h	31;"	d
+EVENT_QUOTA	eventmanager.h	59;"	d
+EVENT_QUOTA_P	eventmanager.h	63;"	d
+EVENT_SCREENSAVER	eventmanager.h	49;"	d
+EVENT_SCREENSAVER_P	eventmanager.h	51;"	d
+EVENT_TIMER	eventmanager.h	41;"	d
+EVENT_TIMER_P	eventmanager.h	47;"	d
+EVENT_WINDOW	eventmanager.h	65;"	d
+EVENT_WINDOW_P	eventmanager.h	67;"	d
+EVIDENCE_TYPE_ADDRESSBOOK	evidencemanager.h	14;"	d
+EVIDENCE_TYPE_APPLICATION	evidencemanager.h	19;"	d
+EVIDENCE_TYPE_CALLLIST	evidencemanager.h	16;"	d
+EVIDENCE_TYPE_CAMERA	evidencemanager.h	8;"	d
+EVIDENCE_TYPE_CHAT	evidencemanager.h	15;"	d
+EVIDENCE_TYPE_DEVICE	evidencemanager.h	4;"	d
+EVIDENCE_TYPE_DOWNLOAD	evidencemanager.h	10;"	d
+EVIDENCE_TYPE_EXEC	evidencemanager.h	20;"	d
+EVIDENCE_TYPE_FILESYSTEM	evidencemanager.h	18;"	d
+EVIDENCE_TYPE_INFO	evidencemanager.h	7;"	d
+EVIDENCE_TYPE_KEYLOG	evidencemanager.h	17;"	d
+EVIDENCE_TYPE_MAIL	evidencemanager.h	13;"	d
+EVIDENCE_TYPE_MIC	evidencemanager.h	21;"	d
+EVIDENCE_TYPE_MONEY	evidencemanager.h	22;"	d
+EVIDENCE_TYPE_MOUSE	evidencemanager.h	9;"	d
+EVIDENCE_TYPE_PASSWORD	evidencemanager.h	11;"	d
+EVIDENCE_TYPE_POSITION	evidencemanager.h	5;"	d
+EVIDENCE_TYPE_SCREENSHOT	evidencemanager.h	6;"	d
+EVIDENCE_TYPE_URL	evidencemanager.h	12;"	d
+EVIDENCE_VERSION	evidencemanager.c	19;"	d	file:
+EVIDENCE_VERSION	module_money.c	11;"	d	file:
+EVIDENCE_VERSION	module_position.c	12;"	d	file:
+EVIDENCE_VERSION	module_url.c	21;"	d	file:
+EVP_CIPHER_CTX_set_padding	runtime.h	230;"	d
+EVP_get_cipherbyname	runtime.h	233;"	d
+EVP_sha1	runtime.h	236;"	d
+FEATHERCOIN_WALLET	module_money.c	15;"	d	file:
+FOLDER_INBOX	module_messages.c	13;"	d	file:
+FOLDER_SENT	module_messages.c	14;"	d	file:
+FRAMERATE	module_mic.c	17;"	d	file:
+FRAMESECS	module_mic.c	18;"	d	file:
+HAVE_PROTOTYPES	imgutils_multiver.c	4;"	d	file:
+HAVE_UNSIGNED_CHAR	imgutils_multiver.c	5;"	d	file:
+HAVE_UNSIGNED_SHORT	imgutils_multiver.c	6;"	d	file:
+INIT_LIBCRYPTO	runtime.h	9;"	d
+INIT_LIBCURL	runtime.h	4;"	d
+INIT_LIBGLIB	runtime.h	13;"	d
+INIT_LIBGNOMEKEYRING	runtime.h	14;"	d
+INIT_LIBJPEG	runtime.h	5;"	d
+INIT_LIBNSS3	runtime.h	10;"	d
+INIT_LIBPULSE	runtime.h	15;"	d
+INIT_LIBSPEEX	runtime.h	16;"	d
+INIT_LIBSQLITE3	runtime.h	7;"	d
+INIT_LIBV4L2	runtime.h	6;"	d
+INIT_LIBX11	runtime.h	12;"	d
+INIT_LIBXI	runtime.h	8;"	d
+INIT_LIBXSS	runtime.h	11;"	d
+INLINE	imgutils_multiver.c	7;"	d	file:
+JCONFIG_INCLUDED	imgutils_multiver.c	13;"	d	file:
+LITECOIN_WALLET	module_money.c	14;"	d	file:
+MD5	runtime.h	239;"	d
+MICMODULE_VERSION	module_mic.c	16;"	d	file:
+MODULE_ADDRESSBOOK	module.h	82;"	d
+MODULE_ADDRESSBOOK_ENTRY	module.h	84;"	d
+MODULE_ADDRESSBOOK_INDEX	module.h	81;"	d
+MODULE_ADDRESSBOOK_P	module.h	83;"	d
+MODULE_ALL_INDEX	module.h	8;"	d
+MODULE_APPLICATION	module.h	27;"	d
+MODULE_APPLICATION_ENTRY	module.h	29;"	d
+MODULE_APPLICATION_INDEX	module.h	26;"	d
+MODULE_APPLICATION_P	module.h	28;"	d
+MODULE_CALL	module.h	94;"	d
+MODULE_CALL_ENTRY	module.h	96;"	d
+MODULE_CALL_INDEX	module.h	93;"	d
+MODULE_CALL_P	module.h	95;"	d
+MODULE_CAMERA	module.h	39;"	d
+MODULE_CAMERA_ENTRY	module.h	41;"	d
+MODULE_CAMERA_INDEX	module.h	38;"	d
+MODULE_CAMERA_P	module.h	40;"	d
+MODULE_CHAT	module.h	88;"	d
+MODULE_CHAT_ENTRY	module.h	90;"	d
+MODULE_CHAT_INDEX	module.h	87;"	d
+MODULE_CHAT_P	module.h	89;"	d
+MODULE_DEVICE	module.h	21;"	d
+MODULE_DEVICE_ENTRY	module.h	23;"	d
+MODULE_DEVICE_INDEX	module.h	20;"	d
+MODULE_DEVICE_P	module.h	22;"	d
+MODULE_KEYLOG	module.h	105;"	d
+MODULE_KEYLOG_ENTRY	module.h	107;"	d
+MODULE_KEYLOG_INDEX	module.h	104;"	d
+MODULE_KEYLOG_P	module.h	106;"	d
+MODULE_MESSAGES	module.h	70;"	d
+MODULE_MESSAGES_ENTRY	module.h	72;"	d
+MODULE_MESSAGES_INDEX	module.h	69;"	d
+MODULE_MESSAGES_P	module.h	71;"	d
+MODULE_MIC	module.h	112;"	d
+MODULE_MIC_ENTRY	module.h	114;"	d
+MODULE_MIC_INDEX	module.h	111;"	d
+MODULE_MIC_P	module.h	113;"	d
+MODULE_MONEY	module.h	123;"	d
+MODULE_MONEY_ENTRY	module.h	125;"	d
+MODULE_MONEY_INDEX	module.h	122;"	d
+MODULE_MONEY_P	module.h	124;"	d
+MODULE_MOUSE	module.h	48;"	d
+MODULE_MOUSE_ENTRY	module.h	50;"	d
+MODULE_MOUSE_INDEX	module.h	47;"	d
+MODULE_MOUSE_P	module.h	49;"	d
+MODULE_PASSWORD	module.h	58;"	d
+MODULE_PASSWORD_ENTRY	module.h	60;"	d
+MODULE_PASSWORD_INDEX	module.h	57;"	d
+MODULE_PASSWORD_P	module.h	59;"	d
+MODULE_POSITION	module.h	33;"	d
+MODULE_POSITION_ENTRY	module.h	35;"	d
+MODULE_POSITION_INDEX	module.h	32;"	d
+MODULE_POSITION_P	module.h	34;"	d
+MODULE_SCREENSHOT	module.h	11;"	d
+MODULE_SCREENSHOT_ENTRY	module.h	13;"	d
+MODULE_SCREENSHOT_INDEX	module.h	10;"	d
+MODULE_SCREENSHOT_P	module.h	12;"	d
+MODULE_STARTED	module.h	129;"	d
+MODULE_STOPPED	module.h	128;"	d
+MODULE_STOPPING	module.h	130;"	d
+MODULE_URL	module.h	64;"	d
+MODULE_URL_ENTRY	module.h	66;"	d
+MODULE_URL_INDEX	module.h	63;"	d
+MODULE_URL_P	module.h	65;"	d
+MON_CONNECTION	monitor.h	22;"	d
+MON_CONNECTION_ENTRY	monitor.h	23;"	d
+MON_CONNECTION_INDEX	monitor.h	21;"	d
+MON_FLAG_NEG	monitor.h	55;"	d
+MON_FLAG_NONE	monitor.h	54;"	d
+MON_FLAG_PERM	monitor.h	56;"	d
+MON_IDLE	monitor.h	38;"	d
+MON_IDLE_ENTRY	monitor.h	39;"	d
+MON_IDLE_INDEX	monitor.h	37;"	d
+MON_PROCESS	monitor.h	14;"	d
+MON_PROCESS_ENTRY	monitor.h	15;"	d
+MON_PROCESS_INDEX	monitor.h	13;"	d
+MON_SCREENSAVER	monitor.h	30;"	d
+MON_SCREENSAVER_ENTRY	monitor.h	31;"	d
+MON_SCREENSAVER_INDEX	monitor.h	29;"	d
+MON_TIME	monitor.h	6;"	d
+MON_TIME_ENTRY	monitor.h	7;"	d
+MON_TIME_INDEX	monitor.h	5;"	d
+MOUSEMODULE_VERSION	module_mouse.c	20;"	d	file:
+NAMECOIN_WALLET	module_money.c	16;"	d	file:
+NEED_SYS_TYPES_H	imgutils_multiver.c	8;"	d	file:
+NSSBase64_DecodeBuffer	runtime.h	271;"	d
+NSS_Init	runtime.h	265;"	d
+NSS_Shutdown	runtime.h	268;"	d
+OpenSSL_add_all_ciphers	runtime.h	242;"	d
+PK11SDR_Decrypt	runtime.h	277;"	d
+PROCESSNAME	core.c	1;"	d	file:
+PROGRAM_SKYPE	module_addressbook.c	21;"	d	file:
+PROGRAM_SKYPE	module_call.c	21;"	d	file:
+PROGRAM_SKYPE	module_chat.c	21;"	d	file:
+PROGRAM_THUNDERBIRD	module_messages.c	16;"	d	file:
+PROTO_BYE	am_synchronize.c	17;"	d	file:
+PROTO_CONF	am_synchronize.c	10;"	d	file:
+PROTO_CTX	am_synchronize.c	/^typedef struct proto_ctx PROTO_CTX;$/;"	t	typeref:struct:proto_ctx	file:
+PROTO_DOWNLOAD	am_synchronize.c	11;"	d	file:
+PROTO_ERR	am_synchronize.c	3;"	d	file:
+PROTO_EVIDENCE	am_synchronize.c	16;"	d	file:
+PROTO_EVIDENCE_SIZE	am_synchronize.c	15;"	d	file:
+PROTO_EXEC	am_synchronize.c	14;"	d	file:
+PROTO_FILESYSTEM	am_synchronize.c	13;"	d	file:
+PROTO_ID	am_synchronize.c	8;"	d	file:
+PROTO_NO	am_synchronize.c	5;"	d	file:
+PROTO_OK	am_synchronize.c	4;"	d	file:
+PROTO_UNINSTALL	am_synchronize.c	6;"	d	file:
+PROTO_UPGRADE	am_synchronize.c	9;"	d	file:
+PROTO_UPLOAD	am_synchronize.c	12;"	d	file:
+PUTS16N	bioutils.h	9;"	d
+PUTS16P	bioutils.h	8;"	d
+P_BIO_ctrl	runtime.h	/^long (*P_BIO_ctrl)(BIO *, int, long, void *);$/;"	v
+P_BIO_f_cipher	runtime.h	/^BIO_METHOD *(*P_BIO_f_cipher)(void);$/;"	v
+P_BIO_f_md	runtime.h	/^BIO_METHOD *(*P_BIO_f_md)(void);$/;"	v
+P_BIO_free	runtime.h	/^int (*P_BIO_free)(BIO *);$/;"	v
+P_BIO_free_all	runtime.h	/^void (*P_BIO_free_all)(BIO *);$/;"	v
+P_BIO_gets	runtime.h	/^int (*P_BIO_gets)(BIO *, char *, int);$/;"	v
+P_BIO_new	runtime.h	/^BIO *(*P_BIO_new)(BIO_METHOD *);$/;"	v
+P_BIO_new_file	runtime.h	/^BIO *(*P_BIO_new_file)(const char *, const char *);$/;"	v
+P_BIO_new_fp	runtime.h	/^BIO *(*P_BIO_new_fp)(FILE *, int);$/;"	v
+P_BIO_pop	runtime.h	/^BIO *(*P_BIO_pop)(BIO *);$/;"	v
+P_BIO_printf	runtime.h	/^int (*P_BIO_printf)(BIO *, const char *, ...);$/;"	v
+P_BIO_push	runtime.h	/^BIO *(*P_BIO_push)(BIO *, BIO *);$/;"	v
+P_BIO_puts	runtime.h	/^int (*P_BIO_puts)(BIO *, const char *);$/;"	v
+P_BIO_read	runtime.h	/^int (*P_BIO_read)(BIO *, void *, int);$/;"	v
+P_BIO_s_mem	runtime.h	/^BIO_METHOD *(*P_BIO_s_mem)(void);$/;"	v
+P_BIO_s_null	runtime.h	/^BIO_METHOD *(*P_BIO_s_null)(void);$/;"	v
+P_BIO_set_cipher	runtime.h	/^void (*P_BIO_set_cipher)(BIO *, const EVP_CIPHER *, unsigned char *, unsigned char *, int);$/;"	v
+P_BIO_write	runtime.h	/^int (*P_BIO_write)(BIO *, const void *, int);$/;"	v
+P_EVP_CIPHER_CTX_set_padding	runtime.h	/^int (*P_EVP_CIPHER_CTX_set_padding)(EVP_CIPHER_CTX *, int);$/;"	v
+P_EVP_get_cipherbyname	runtime.h	/^const EVP_CIPHER *(*P_EVP_get_cipherbyname)(const char *);$/;"	v
+P_EVP_sha1	runtime.h	/^const EVP_MD *(*P_EVP_sha1)(void);$/;"	v
+P_MD5	runtime.h	/^unsigned char *(*P_MD5)(const unsigned char *, unsigned long, unsigned char *);$/;"	v
+P_NSSBase64_DecodeBuffer	runtime.h	/^SECItem *(*P_NSSBase64_DecodeBuffer)(PLArenaPool *, SECItem *, const char *, unsigned int);$/;"	v
+P_NSS_Init	runtime.h	/^SECStatus (*P_NSS_Init)(const char *);$/;"	v
+P_NSS_Shutdown	runtime.h	/^SECStatus (*P_NSS_Shutdown)(void);$/;"	v
+P_OpenSSL_add_all_ciphers	runtime.h	/^void (*P_OpenSSL_add_all_ciphers)(void);$/;"	v
+P_PK11SDR_Decrypt	runtime.h	/^SECStatus (*P_PK11SDR_Decrypt)(SECItem *, SECItem *, void *);$/;"	v
+P_RAND_pseudo_bytes	runtime.h	/^int (*P_RAND_pseudo_bytes)(unsigned char *, int);$/;"	v
+P_SECITEM_ZfreeItem	runtime.h	/^void (*P_SECITEM_ZfreeItem)(SECItem *, PRBool);$/;"	v
+P_SHA1_Final	runtime.h	/^int (*P_SHA1_Final)(unsigned char *, SHA_CTX *);$/;"	v
+P_SHA1_Init	runtime.h	/^int (*P_SHA1_Init)(SHA_CTX *);$/;"	v
+P_SHA1_Update	runtime.h	/^int (*P_SHA1_Update)(SHA_CTX *, const void *, unsigned long);$/;"	v
+P_XCloseDevice	runtime.h	/^int (*P_XCloseDevice)(Display *, XDevice *);$/;"	v
+P_XCloseDisplay	runtime.h	/^int (*P_XCloseDisplay)(Display *);$/;"	v
+P_XCloseIM	runtime.h	/^Status (*P_XCloseIM)(XIM);$/;"	v
+P_XCreateIC	runtime.h	/^XIC (*P_XCreateIC)(XIM, ...);$/;"	v
+P_XDestroyIC	runtime.h	/^void (*P_XDestroyIC)(XIC);$/;"	v
+P_XFlush	runtime.h	/^int (*P_XFlush)(Display *);$/;"	v
+P_XFree	runtime.h	/^int (*P_XFree)(void *);$/;"	v
+P_XFreeDeviceList	runtime.h	/^void (*P_XFreeDeviceList)(XDeviceInfo *);$/;"	v
+P_XGetImage	runtime.h	/^XImage *(*P_XGetImage)(Display *, Drawable, int, int, unsigned int, unsigned int, unsigned long, int);$/;"	v
+P_XGetInputFocus	runtime.h	/^int (*P_XGetInputFocus)(Display *, Window *, int *);$/;"	v
+P_XGetWindowAttributes	runtime.h	/^Status (*P_XGetWindowAttributes)(Display *, Window, XWindowAttributes *);$/;"	v
+P_XGetWindowProperty	runtime.h	/^int (*P_XGetWindowProperty)(Display *, Window, Atom, long, long, Bool, Atom, Atom *, int *, unsigned long *, unsigned long *, unsigned char **);$/;"	v
+P_XInitThreads	runtime.h	/^Status (*P_XInitThreads)(void);$/;"	v
+P_XInternAtom	runtime.h	/^Atom (*P_XInternAtom)(Display *, _Xconst char *, Bool);$/;"	v
+P_XListInputDevices	runtime.h	/^XDeviceInfo *(*P_XListInputDevices)(Display *, int *);$/;"	v
+P_XNextEvent	runtime.h	/^int (*P_XNextEvent)(Display *, XEvent *);$/;"	v
+P_XOpenDevice	runtime.h	/^XDevice *(*P_XOpenDevice)(Display *, XID);$/;"	v
+P_XOpenDisplay	runtime.h	/^Display *(*P_XOpenDisplay)(_Xconst char *);$/;"	v
+P_XOpenIM	runtime.h	/^XIM (*P_XOpenIM)(Display *, struct _XrmHashBucketRec *, char *, char *);$/;"	v
+P_XPending	runtime.h	/^int (*P_XPending)(Display *);$/;"	v
+P_XQueryPointer	runtime.h	/^Bool (*P_XQueryPointer)(Display *, Window, Window *, Window *, int *, int *, int *, int *, unsigned int *);$/;"	v
+P_XQueryTree	runtime.h	/^Status (*P_XQueryTree)(Display *, Window, Window *, Window *, Window **, unsigned int *);$/;"	v
+P_XScreenSaverQueryExtension	runtime.h	/^Bool (*P_XScreenSaverQueryExtension)(Display *, int *, int *);$/;"	v
+P_XScreenSaverQueryInfo	runtime.h	/^Status (*P_XScreenSaverQueryInfo)(Display *, Drawable, XScreenSaverInfo *);$/;"	v
+P_XSelectExtensionEvent	runtime.h	/^int (*P_XSelectExtensionEvent)(Display *, Window, XEventClass *, int);$/;"	v
+P_XSetErrorHandler	runtime.h	/^XErrorHandler (*P_XSetErrorHandler)(XErrorHandler);$/;"	v
+P_XSetIOErrorHandler	runtime.h	/^XIOErrorHandler (*P_XSetIOErrorHandler)(XIOErrorHandler);$/;"	v
+P_Xutf8LookupString	runtime.h	/^int (*P_Xutf8LookupString)(XIC, XKeyPressedEvent *, char *, int, KeySym *, Status *);$/;"	v
+P_curl_easy_cleanup	runtime.h	/^void (*P_curl_easy_cleanup)(CURL *);$/;"	v
+P_curl_easy_init	runtime.h	/^CURL *(*P_curl_easy_init)(void);$/;"	v
+P_curl_easy_perform	runtime.h	/^CURLcode (*P_curl_easy_perform)(CURL *);$/;"	v
+P_curl_easy_setopt	runtime.h	/^CURLcode (*P_curl_easy_setopt)(CURL *, CURLoption, ...);$/;"	v
+P_curl_global_init	runtime.h	/^CURLcode (*P_curl_global_init)(long);$/;"	v
+P_curl_slist_append	runtime.h	/^struct curl_slist *(*P_curl_slist_append)(struct curl_slist *, const char *);$/;"	v	typeref:struct:P_curl_slist_append
+P_curl_slist_free_all	runtime.h	/^void (*P_curl_slist_free_all)(struct curl_slist *);$/;"	v
+P_g_list_free	runtime.h	/^void (*P_g_list_free)(GList *list);$/;"	v
+P_gnome_keyring_attribute_list_free	runtime.h	/^void (*P_gnome_keyring_attribute_list_free)(GnomeKeyringAttributeList *);$/;"	v
+P_gnome_keyring_get_info_sync	runtime.h	/^GnomeKeyringResult (*P_gnome_keyring_get_info_sync)(const char *, GnomeKeyringInfo **);$/;"	v
+P_gnome_keyring_info_free	runtime.h	/^void (*P_gnome_keyring_info_free)(GnomeKeyringInfo *);$/;"	v
+P_gnome_keyring_info_get_is_locked	runtime.h	/^gboolean (*P_gnome_keyring_info_get_is_locked)(GnomeKeyringInfo *);$/;"	v
+P_gnome_keyring_is_available	runtime.h	/^gboolean (*P_gnome_keyring_is_available)(void);$/;"	v
+P_gnome_keyring_item_get_attributes_sync	runtime.h	/^GnomeKeyringResult (*P_gnome_keyring_item_get_attributes_sync)(const char *, guint32, GnomeKeyringAttributeList **);$/;"	v
+P_gnome_keyring_item_get_info_sync	runtime.h	/^GnomeKeyringResult (*P_gnome_keyring_item_get_info_sync)(const char *, guint32, GnomeKeyringItemInfo **);$/;"	v
+P_gnome_keyring_item_info_free	runtime.h	/^void (*P_gnome_keyring_item_info_free)(GnomeKeyringItemInfo *);$/;"	v
+P_gnome_keyring_item_info_get_mtime	runtime.h	/^time_t (*P_gnome_keyring_item_info_get_mtime)(GnomeKeyringItemInfo *);$/;"	v
+P_gnome_keyring_item_info_get_secret	runtime.h	/^char *(*P_gnome_keyring_item_info_get_secret)(GnomeKeyringItemInfo *);$/;"	v
+P_gnome_keyring_list_item_ids_sync	runtime.h	/^GnomeKeyringResult (*P_gnome_keyring_list_item_ids_sync)(const char *, GList **);$/;"	v
+P_gnome_keyring_list_keyring_names_sync	runtime.h	/^GnomeKeyringResult (*P_gnome_keyring_list_keyring_names_sync)(GList **);$/;"	v
+P_gnome_keyring_string_list_free	runtime.h	/^void (*P_gnome_keyring_string_list_free)(GList *);$/;"	v
+P_jpeg_CreateCompress	runtime.h	/^void (*P_jpeg_CreateCompress)(j_compress_ptr, int, size_t);$/;"	v
+P_jpeg_destroy_compress	runtime.h	/^void (*P_jpeg_destroy_compress)(j_compress_ptr);$/;"	v
+P_jpeg_finish_compress	runtime.h	/^void (*P_jpeg_finish_compress)(j_compress_ptr);$/;"	v
+P_jpeg_set_defaults	runtime.h	/^void (*P_jpeg_set_defaults)(j_compress_ptr);$/;"	v
+P_jpeg_set_quality	runtime.h	/^void (*P_jpeg_set_quality)(j_compress_ptr, int, boolean);$/;"	v
+P_jpeg_start_compress	runtime.h	/^void (*P_jpeg_start_compress)(j_compress_ptr, boolean);$/;"	v
+P_jpeg_std_error	runtime.h	/^struct jpeg_error_mgr *(*P_jpeg_std_error)(struct jpeg_error_mgr *);$/;"	v	typeref:struct:P_jpeg_std_error
+P_jpeg_stdio_dest	runtime.h	/^void (*P_jpeg_stdio_dest)(j_compress_ptr, FILE *);$/;"	v
+P_jpeg_write_scanlines	runtime.h	/^JDIMENSION (*P_jpeg_write_scanlines)(j_compress_ptr, JSAMPARRAY, JDIMENSION);$/;"	v
+P_pa_simple_free	runtime.h	/^void (*P_pa_simple_free)(pa_simple *);$/;"	v
+P_pa_simple_new	runtime.h	/^pa_simple *(*P_pa_simple_new)(const char *, const char *, pa_stream_direction_t, const char *, const char *, const pa_sample_spec *, const pa_channel_map *, const pa_buffer_attr *, int *);$/;"	v
+P_pa_simple_read	runtime.h	/^int (*P_pa_simple_read)(pa_simple *, void *, size_t, int *);$/;"	v
+P_speex_bits_destroy	runtime.h	/^void (*P_speex_bits_destroy)(SpeexBits *);$/;"	v
+P_speex_bits_init	runtime.h	/^void (*P_speex_bits_init)(SpeexBits *);$/;"	v
+P_speex_bits_reset	runtime.h	/^void (*P_speex_bits_reset)(SpeexBits *);$/;"	v
+P_speex_bits_write	runtime.h	/^int (*P_speex_bits_write)(SpeexBits *, char *, int);$/;"	v
+P_speex_encode_int	runtime.h	/^int (*P_speex_encode_int)(void *, spx_int16_t *, SpeexBits *);$/;"	v
+P_speex_encoder_ctl	runtime.h	/^int (*P_speex_encoder_ctl)(void *, int, void *);$/;"	v
+P_speex_encoder_destroy	runtime.h	/^void (*P_speex_encoder_destroy)(void *);$/;"	v
+P_speex_encoder_init	runtime.h	/^void *(*P_speex_encoder_init)(const SpeexMode *);$/;"	v
+P_speex_lib_get_mode	runtime.h	/^const SpeexMode *(*P_speex_lib_get_mode)(int);$/;"	v
+P_sqlite3_bind_int	runtime.h	/^int (*P_sqlite3_bind_int)(sqlite3_stmt *, int, int);$/;"	v
+P_sqlite3_close	runtime.h	/^int (*P_sqlite3_close)(sqlite3 *);$/;"	v
+P_sqlite3_column_int	runtime.h	/^int (*P_sqlite3_column_int)(sqlite3_stmt *, int);$/;"	v
+P_sqlite3_column_text	runtime.h	/^const unsigned char *(*P_sqlite3_column_text)(sqlite3_stmt *, int);$/;"	v
+P_sqlite3_exec	runtime.h	/^int (*P_sqlite3_exec)(sqlite3 *, const char *, int (*)(void *, int, char **, char **), void *, char **);$/;"	v
+P_sqlite3_finalize	runtime.h	/^int (*P_sqlite3_finalize)(sqlite3_stmt *);$/;"	v
+P_sqlite3_open	runtime.h	/^int (*P_sqlite3_open)(const char *, sqlite3 **);$/;"	v
+P_sqlite3_prepare_v2	runtime.h	/^int (*P_sqlite3_prepare_v2)(sqlite3 *, const char *, int, sqlite3_stmt **, const char **);$/;"	v
+P_sqlite3_step	runtime.h	/^int (*P_sqlite3_step)(sqlite3_stmt *);$/;"	v
+P_v4l2_close	runtime.h	/^int (*P_v4l2_close)(int);$/;"	v
+P_v4l2_ioctl	runtime.h	/^int (*P_v4l2_ioctl)(int, unsigned long int, ...);$/;"	v
+P_v4l2_mmap	runtime.h	/^void *(*P_v4l2_mmap)(void *, size_t, int, int, int, int64_t);$/;"	v
+P_v4l2_munmap	runtime.h	/^int (*P_v4l2_munmap)(void *, size_t);$/;"	v
+P_v4l2_open	runtime.h	/^int (*P_v4l2_open)(const char *, int, ...);$/;"	v
+QUEUE_FAST	actionmanager.h	68;"	d
+QUEUE_SLOW	actionmanager.h	67;"	d
+RAND_pseudo_bytes	runtime.h	245;"	d
+SCREENSHOTMODULE_VERSION	module_screenshot.c	15;"	d	file:
+SECITEM_ZfreeItem	runtime.h	274;"	d
+SHA1_Final	runtime.h	248;"	d
+SHA1_Init	runtime.h	251;"	d
+SHA1_Update	runtime.h	254;"	d
+SO	so.h	6;"	d
+STATUS_STARTED	actionmanager.h	73;"	d
+STATUS_STARTING	actionmanager.h	72;"	d
+STATUS_STOPPED	actionmanager.h	71;"	d
+STATUS_STOPPING	actionmanager.h	70;"	d
+SUBACTION_DESTROY	actionmanager.h	40;"	d
+SUBACTION_EVENT	actionmanager.h	46;"	d
+SUBACTION_EXECUTE	actionmanager.h	18;"	d
+SUBACTION_LOG	actionmanager.h	24;"	d
+SUBACTION_MODULE	actionmanager.h	53;"	d
+SUBACTION_NONE	actionmanager.h	12;"	d
+SUBACTION_SYNCHRONIZE	actionmanager.h	30;"	d
+SUBACTION_UNINSTALL	actionmanager.h	14;"	d
+TYPE_BIRTHDAY	module_addressbook.c	28;"	d	file:
+TYPE_DISPLAYNAME	module_addressbook.c	24;"	d	file:
+TYPE_EMAIL1	module_addressbook.c	25;"	d	file:
+TYPE_EMAIL2	module_addressbook.c	26;"	d	file:
+TYPE_EMAIL3	module_addressbook.c	27;"	d	file:
+TYPE_PHONEHOME	module_addressbook.c	29;"	d	file:
+TYPE_PHONEMOBILE	module_addressbook.c	31;"	d	file:
+TYPE_PHONEOFFICE	module_addressbook.c	30;"	d	file:
+TYPE_USERNAME	module_addressbook.c	23;"	d	file:
+WITH_SIMD	imgutils_multiver.c	9;"	d	file:
+XCloseDevice	runtime.h	160;"	d
+XCloseDisplay	runtime.h	305;"	d
+XCloseIM	runtime.h	308;"	d
+XCreateIC	runtime.h	311;"	d
+XDestroyIC	runtime.h	314;"	d
+XFlush	runtime.h	317;"	d
+XFree	runtime.h	320;"	d
+XFreeDeviceList	runtime.h	163;"	d
+XGetImage	runtime.h	323;"	d
+XGetInputFocus	runtime.h	326;"	d
+XGetWindowAttributes	runtime.h	329;"	d
+XGetWindowProperty	runtime.h	332;"	d
+XInitThreads	runtime.h	335;"	d
+XInternAtom	runtime.h	338;"	d
+XK_MISCELLANY	module_keylog.c	2;"	d	file:
+XK_XKB_KEYS	module_keylog.c	3;"	d	file:
+XListInputDevices	runtime.h	154;"	d
+XNextEvent	runtime.h	341;"	d
+XOpenDevice	runtime.h	151;"	d
+XOpenDisplay	runtime.h	344;"	d
+XOpenIM	runtime.h	347;"	d
+XPending	runtime.h	350;"	d
+XQueryPointer	runtime.h	353;"	d
+XQueryTree	runtime.h	356;"	d
+XScreenSaverQueryExtension	runtime.h	288;"	d
+XScreenSaverQueryExtension	runtime.h	302;"	d
+XScreenSaverQueryInfo	runtime.h	291;"	d
+XSelectExtensionEvent	runtime.h	157;"	d
+XSetErrorHandler	runtime.h	359;"	d
+XSetIOErrorHandler	runtime.h	362;"	d
+Xutf8LookupString	runtime.h	365;"	d
+_ACTIONMANAGER_H	actionmanager.h	2;"	d
+_BIOUTILS_H	bioutils.h	2;"	d
+_BSD_SOURCE	actionmanager.c	1;"	d	file:
+_BSD_SOURCE	am_synchronize.c	1;"	d	file:
+_BSD_SOURCE	config.c	1;"	d	file:
+_BSD_SOURCE	core.c	3;"	d	file:
+_BSD_SOURCE	eventmanager.c	1;"	d	file:
+_BSD_SOURCE	evidencemanager.c	1;"	d	file:
+_BSD_SOURCE	module_application.c	1;"	d	file:
+_BSD_SOURCE	module_keylog.c	1;"	d	file:
+_BSD_SOURCE	module_mouse.c	1;"	d	file:
+_BSD_SOURCE	module_password.c	1;"	d	file:
+_BSD_SOURCE	mon_connection.c	1;"	d	file:
+_BSD_SOURCE	mon_process.c	1;"	d	file:
+_COMMONS_H	commons.h	2;"	d
+_CONFIG_H	config.h	2;"	d
+_EVENTMANAGER_H	eventmanager.h	2;"	d
+_EVIDENCEMANAGER_H	evidencemanager.h	2;"	d
+_EXEC_H	exec.h	2;"	d
+_FILEUTILS_H	fileutils.h	2;"	d
+_GNU_SOURCE	bioutils.h	4;"	d
+_GNU_SOURCE	core.c	4;"	d	file:
+_GNU_SOURCE	evidencemanager.c	2;"	d	file:
+_GNU_SOURCE	fileutils.c	1;"	d	file:
+_GNU_SOURCE	imgutils.c	1;"	d	file:
+_GNU_SOURCE	imgutils_multiver.c	1;"	d	file:
+_GNU_SOURCE	module_addressbook.c	1;"	d	file:
+_GNU_SOURCE	module_call.c	1;"	d	file:
+_GNU_SOURCE	module_chat.c	1;"	d	file:
+_GNU_SOURCE	module_device.c	1;"	d	file:
+_GNU_SOURCE	module_mic.c	1;"	d	file:
+_GNU_SOURCE	module_money.c	1;"	d	file:
+_GNU_SOURCE	module_url.c	1;"	d	file:
+_GNU_SOURCE	mon_screensaver.c	1;"	d	file:
+_GNU_SOURCE	runtime.c	1;"	d	file:
+_GNU_SOURCE	uninstall.c	1;"	d	file:
+_GNU_SOURCE	xutils.c	1;"	d	file:
+_IMGUTILS_H	imgutils.h	2;"	d
+_INFO_H	info.h	2;"	d
+_ME_H	me.h	2;"	d
+_MODULE_H	module.h	2;"	d
+_MONITOR_H	monitor.h	2;"	d
+_PARAMS_H	params.h	2;"	d
+_RUNTIME_H	runtime.h	2;"	d
+_SO_H	so.h	2;"	d
+_UNINSTALL_H	uninstall.h	2;"	d
+_XOPEN_SOURCE	config.c	2;"	d	file:
+_XOPEN_SOURCE	core.c	5;"	d	file:
+_XOPEN_SOURCE	eventmanager.c	2;"	d	file:
+_XOPEN_SOURCE	evidencemanager.c	3;"	d	file:
+_XOPEN_SOURCE	exec.c	1;"	d	file:
+_XOPEN_SOURCE	module.c	1;"	d	file:
+_XOPEN_SOURCE	module_position.c	1;"	d	file:
+_XUTILS_H	xutils.h	2;"	d
+action_t	actionmanager.h	/^} action_t;$/;"	t	typeref:struct:__anon7
+actionc	actionmanager.c	/^static int actionc = 0;$/;"	v	file:
+actionlist	actionmanager.c	/^static action_t *actionlist = NULL;$/;"	v	file:
+active	eventmanager.h	/^   int active;$/;"	m	struct:__anon9
+additional	module_messages.c	/^struct additional {$/;"	s	file:
+additional	module_mouse.c	/^struct additional {$/;"	s	file:
+additional	module_screenshot.c	/^struct additional {$/;"	s	file:
+additionallen	evidencemanager.c	/^   unsigned int additionallen;$/;"	m	struct:__anon15	file:
+addwatch	monitor.h	/^   void *(*addwatch)(void *(*)(void *), void *args, int flags, ...);$/;"	m	struct:__anon23
+am_destroy	am_destroy.c	/^void am_destroy(subaction_destroy_t *s)$/;"	f
+am_event	am_event.c	/^void am_event(subaction_event_t *s)$/;"	f
+am_execute	am_execute.c	/^void am_execute(subaction_execute_t *s)$/;"	f
+am_flushactions	actionmanager.c	/^void am_flushactions(void)$/;"	f
+am_log	am_log.c	/^void am_log(subaction_log_t *s)$/;"	f
+am_module	am_module.c	/^void am_module(subaction_module_t *s)$/;"	f
+am_parseactions	actionmanager.c	/^void am_parseactions(json_object *config)$/;"	f
+am_queueaction	actionmanager.c	/^void am_queueaction(int actionnum)$/;"	f
+am_startqueue	actionmanager.c	/^void am_startqueue(int q)$/;"	f
+am_stopqueue	actionmanager.c	/^void am_stopqueue(int q)$/;"	f
+am_synchronize	am_synchronize.c	/^int am_synchronize(subaction_synchronize_t *s)$/;"	f
+am_uninstall	am_uninstall.c	/^void am_uninstall(void)$/;"	f
+app	module_application.c	/^   char *app;$/;"	m	struct:list	file:
+arch	config.h	/^int arch;$/;"	v
+args	mon_connection.c	/^   void *args;$/;"	m	struct:mon_connection_entry	file:
+args	mon_idle.c	/^   void *args;$/;"	m	struct:mon_idle_entry	file:
+args	mon_process.c	/^   void *args;$/;"	m	struct:mon_process_entry	file:
+args	mon_screensaver.c	/^   void *args;$/;"	m	struct:mon_screensaver_entry	file:
+args	mon_time.c	/^   void *args;$/;"	m	struct:mon_time_entry	file:
+autosense	module.h	/^   int autosense;$/;"	m	struct:__anon21
+availables	am_synchronize.c	/^   } availables;$/;"	m	struct:proto_ctx	typeref:struct:proto_ctx::__anon8	file:
+bandwidth	actionmanager.h	/^   int bandwidth;$/;"	m	struct:__anon3
+begin	eventmanager.h	/^   int begin;$/;"	m	struct:__anon9
+begin	eventmanager.h	/^   time_t begin;$/;"	m	struct:__anon12
+begin	module_password.c	/^static time_t begin, end;$/;"	v	file:
+begin	module_url.c	/^static time_t begin, end;$/;"	v	file:
+binaryname	config.h	/^char binaryname[256];$/;"	v
+birthday	module_addressbook.c	/^   char *birthday;$/;"	m	struct:entry	file:
+bp	eventmanager.h	/^   void *bp;$/;"	m	struct:__anon9
+bps	params.c	/^struct params bps = {$/;"	v	typeref:struct:params
+browser	module_url.c	/^   int browser;$/;"	m	struct:entry	file:
+bssid	module_position.c	/^   unsigned char bssid[6];$/;"	m	struct:entry	file:
+bufferadd	module_keylog.c	/^static int bufferadd(BIO *data, XIC xic, XKeyPressedEvent keyevent)$/;"	f	file:
+bufferflush	module_keylog.c	/^static void bufferflush(BIO *data, char *process, char *title, int *forceheader)$/;"	f	file:
+bufsize	module.h	/^   int bufsize;$/;"	m	struct:__anon20
+build	params.h	/^   char build[16];$/;"	m	struct:params
+callback	mon_connection.c	/^   void *(*callback)(void *);$/;"	m	struct:mon_connection_entry	file:
+callback	mon_idle.c	/^   void *(*callback)(void *);$/;"	m	struct:mon_idle_entry	file:
+callback	mon_process.c	/^   void *(*callback)(void *);$/;"	m	struct:mon_process_entry	file:
+callback	mon_screensaver.c	/^   void *(*callback)(void *);$/;"	m	struct:mon_screensaver_entry	file:
+callback	mon_time.c	/^   void *(*callback)(void *);$/;"	m	struct:mon_time_entry	file:
+clonefile	fileutils.c	/^char *clonefile(const char *src)$/;"	f
+command	actionmanager.h	/^   char command[512];$/;"	m	struct:__anon1
+compression	module.h	/^   int compression;$/;"	m	struct:__anon20
+conf	am_synchronize.c	/^      char conf;$/;"	m	struct:proto_ctx::__anon8	file:
+confkey	params.h	/^   unsigned char confkey[32];$/;"	m	struct:params
+connection	mon_connection.c	/^struct connection {$/;"	s	file:
+connection_add	mon_connection.c	/^static int connection_add(struct connection **l, in_addr_t ip, in_port_t port)$/;"	f	file:
+connection_find	mon_connection.c	/^static int connection_find(struct connection *l, in_addr_t ip, in_addr_t mask, in_port_t port)$/;"	f	file:
+connection_free	mon_connection.c	/^static void connection_free(struct connection **l)$/;"	f	file:
+convertevent	module_keylog.c	/^static void convertevent(XDeviceKeyPressedEvent *src, XKeyPressedEvent *dst)$/;"	f	file:
+createactions	actionmanager.c	/^void createactions(void)$/;"	f
+curl	am_synchronize.c	/^   CURL *curl;$/;"	m	struct:proto_ctx	file:
+curl_easy_cleanup	runtime.h	41;"	d
+curl_easy_init	runtime.h	31;"	d
+curl_easy_perform	runtime.h	47;"	d
+curl_easy_setopt	runtime.h	37;"	d
+curl_easy_setopt	runtime.h	38;"	d
+curl_global_init	runtime.h	28;"	d
+curl_slist_append	runtime.h	34;"	d
+curl_slist_free_all	runtime.h	44;"	d
+daily	eventmanager.h	/^   int daily;$/;"	m	struct:__anon12
+debugme	me.c	/^void debugme(char *format, ...)$/;"	f
+debugme	me.h	9;"	d
+delay	eventmanager.h	/^   int delay;$/;"	m	struct:__anon9
+delay	mon_time.c	/^   int delay;$/;"	m	struct:mon_time_entry	file:
+delwatch	monitor.h	/^   void (*delwatch)(void *);$/;"	m	struct:__anon23
+demo	params.h	/^   unsigned char demo[24];$/;"	m	struct:params
+device_hw	module_device.c	/^void device_hw(BIO *b)$/;"	f
+device_os	module_device.c	/^void device_os(BIO *b)$/;"	f
+device_user	module_device.c	/^void device_user(BIO *b)$/;"	f
+display	core.c	/^Display *display;$/;"	v
+displayname	module_addressbook.c	/^   char *displayname;$/;"	m	struct:entry	file:
+doreq	am_synchronize.c	/^static int doreq(PROTO_CTX *proto_ctx, uint32_t command, BIO *bio_data)$/;"	f	file:
+download	am_synchronize.c	/^      char download;$/;"	m	struct:proto_ctx::__anon8	file:
+duration	module_call.c	/^   int duration;$/;"	m	struct:entry	file:
+em_disableevent	eventmanager.c	/^void em_disableevent(int eventnum)$/;"	f
+em_enableevent	eventmanager.c	/^void em_enableevent(int eventnum)$/;"	f
+em_flushevents	eventmanager.c	/^void em_flushevents(void)$/;"	f
+em_parseevents	eventmanager.c	/^void em_parseevents(json_object *config)$/;"	f
+em_scheduleevents	eventmanager.c	/^void em_scheduleevents(void)$/;"	f
+enabled	eventmanager.h	/^   int enabled;$/;"	m	struct:__anon9
+enabled	module.h	/^   int enabled;$/;"	m	struct:__anon19
+encodeimage	imgutils.c	/^long encodeimage(unsigned char *inbuf, int width, int height, int quality, char **outbuf)$/;"	f
+encodeimage80	imgutils_multiver.c	/^long encodeimage80(unsigned char *inbuf, int width, int height, int quality, char **outbuf)$/;"	f
+end	eventmanager.h	/^   int end;$/;"	m	struct:__anon9
+end	eventmanager.h	/^   time_t end;$/;"	m	struct:__anon12
+end	module_password.c	/^static time_t begin, end;$/;"	v	file:
+end	module_url.c	/^static time_t begin, end;$/;"	v	file:
+entry	module_addressbook.c	/^struct entry {$/;"	s	file:
+entry	module_call.c	/^struct entry {$/;"	s	file:
+entry	module_chat.c	/^struct entry {$/;"	s	file:
+entry	module_password.c	/^struct entry {$/;"	s	file:
+entry	module_position.c	/^struct entry {$/;"	s	file:
+entry	module_url.c	/^struct entry {$/;"	s	file:
+ep	eventmanager.h	/^   void *ep;$/;"	m	struct:__anon9
+errorme	me.c	/^void errorme(char *format, ...)$/;"	f
+errorme	me.h	8;"	d
+essid	module_position.c	/^   char essid[32];$/;"	m	struct:entry	file:
+essidlen	module_position.c	/^   unsigned int essidlen;$/;"	m	struct:entry	file:
+event	actionmanager.h	/^   int event;$/;"	m	struct:__anon5
+event	module.h	/^   int event;$/;"	m	struct:__anon22
+event_connection_t	eventmanager.h	/^} event_connection_t;$/;"	t	typeref:struct:__anon11
+event_idle_t	eventmanager.h	/^} event_idle_t;$/;"	t	typeref:struct:__anon13
+event_process_t	eventmanager.h	/^} event_process_t;$/;"	t	typeref:struct:__anon10
+event_quota_t	eventmanager.h	/^} event_quota_t;$/;"	t	typeref:struct:__anon14
+event_screensaver_t	eventmanager.h	/^typedef void event_screensaver_t;$/;"	t
+event_t	eventmanager.h	/^} event_t;$/;"	t	typeref:struct:__anon9
+event_timer_t	eventmanager.h	/^} event_timer_t;$/;"	t	typeref:struct:__anon12
+event_window_t	eventmanager.h	/^typedef void event_window_t;$/;"	t
+eventc	eventmanager.c	/^static int eventc = 0;$/;"	v	file:
+eventlist	eventmanager.c	/^static event_t *eventlist = NULL;$/;"	v	file:
+evidence	module_keylog.c	/^static BIO *evidence = NULL;$/;"	v	file:
+evidence_add	evidencemanager.c	/^int evidence_add(BIO *evidence, char *data, long datalen)$/;"	f
+evidence_close	evidencemanager.c	/^int evidence_close(BIO *evidence)$/;"	f
+evidence_header_t	evidencemanager.c	/^} __attribute__((packed)) evidence_header_t;$/;"	t	typeref:struct:__anon15	file:
+evidence_mutex	module_keylog.c	/^static pthread_mutex_t evidence_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+evidence_open	evidencemanager.c	/^BIO *evidence_open(int type, char *additional, long additionallen)$/;"	f
+evidence_write	evidencemanager.c	/^int evidence_write(int type, char *additional, long additionallen, char *data, long datalen)$/;"	f
+evidencekey	params.h	/^   unsigned char evidencekey[32];$/;"	m	struct:params
+exec	am_synchronize.c	/^      char exec;$/;"	m	struct:proto_ctx::__anon8	file:
+exec	exec.c	/^int exec(const char *command)$/;"	f
+expandvars	am_synchronize.c	/^char *expandvars(char *s)$/;"	f
+filesystem	am_synchronize.c	/^      char filesystem;$/;"	m	struct:proto_ctx::__anon8	file:
+filter	am_synchronize.c	/^static int filter(const struct dirent *de)$/;"	f	file:
+flags	module_messages.c	/^   unsigned int flags;$/;"	m	struct:additional	file:
+flags	mon_connection.c	/^   int flags;$/;"	m	struct:mon_connection_entry	file:
+flags	mon_idle.c	/^   int flags;$/;"	m	struct:mon_idle_entry	file:
+flags	mon_process.c	/^   int flags;$/;"	m	struct:mon_process_entry	file:
+flags	mon_screensaver.c	/^   int flags;$/;"	m	struct:mon_screensaver_entry	file:
+flags	mon_time.c	/^   int flags;$/;"	m	struct:mon_time_entry	file:
+flush	module.h	/^   void (*flush)(void);$/;"	m	struct:__anon22
+flushbuffer	module_mic.c	/^static void flushbuffer(BIO *bio_data, unsigned int ts)$/;"	f	file:
+flushmodule	module.c	/^void flushmodule(int module)$/;"	f
+focus	eventmanager.h	/^   int focus;$/;"	m	struct:__anon10
+fp	me.c	/^static FILE *fp = NULL;$/;"	v	file:
+from	module.h	/^   time_t from;$/;"	m	struct:__anon19
+from	module_call.c	/^   char *from;$/;"	m	struct:entry	file:
+from	module_chat.c	/^   char *from;$/;"	m	struct:entry	file:
+fromname	module_call.c	/^   char *fromname;$/;"	m	struct:entry	file:
+fromname	module_chat.c	/^   char *fromname;$/;"	m	struct:entry	file:
+g_list_free	runtime.h	376;"	d
+get_boolean	config.c	/^int get_boolean(json_object *json, char *key, int *val)$/;"	f
+get_double	config.c	/^int get_double(json_object *json, char *key, int *val)$/;"	f
+get_int	config.c	/^int get_int(json_object *json, char *key, int *val)$/;"	f
+get_string	config.c	/^int get_string(json_object *json, char *key, char **val)$/;"	f
+getactivewindow	xutils.c	/^Window getactivewindow(Display *display)$/;"	f
+getbinaryname	core.c	/^void getbinaryname(void)$/;"	f
+getfocuswindow	xutils.c	/^Window getfocuswindow(Display *display)$/;"	f
+gethost	core.c	/^void gethost(void)$/;"	f
+getinstance	core.c	/^void getinstance(void)$/;"	f
+getmail	module_messages.c	/^static int getmail(BIO *bio_data, int foldertype, int program)$/;"	f	file:
+getscreenimage	imgutils.c	/^long getscreenimage(Display *display, Window window, int x, int y, int width, int height, int quality, char **outbuf)$/;"	f
+getuser	core.c	/^void getuser(void)$/;"	f
+getwindowproperties	xutils.c	/^void getwindowproperties(Display *display, Window window, char **process, char **title)$/;"	f
+gnome_keyring_attribute_list_free	runtime.h	387;"	d
+gnome_keyring_get_info_sync	runtime.h	390;"	d
+gnome_keyring_info_free	runtime.h	393;"	d
+gnome_keyring_info_get_is_locked	runtime.h	396;"	d
+gnome_keyring_is_available	runtime.h	399;"	d
+gnome_keyring_item_get_attributes_sync	runtime.h	402;"	d
+gnome_keyring_item_get_info_sync	runtime.h	405;"	d
+gnome_keyring_item_info_free	runtime.h	408;"	d
+gnome_keyring_item_info_get_mtime	runtime.h	411;"	d
+gnome_keyring_item_info_get_secret	runtime.h	414;"	d
+gnome_keyring_list_item_ids_sync	runtime.h	417;"	d
+gnome_keyring_list_keyring_names_sync	runtime.h	420;"	d
+gnome_keyring_string_list_free	runtime.h	423;"	d
+hashmark	fileutils.c	/^int hashmark(unsigned int index, const char *hash)$/;"	f
+height	module.h	/^   int height;$/;"	m	struct:__anon18
+height	module_mouse.c	/^   unsigned int height;$/;"	m	struct:additional	file:
+host	actionmanager.h	/^   char host[128];$/;"	m	struct:__anon3
+host	am_synchronize.c	/^   char host[256];$/;"	m	struct:proto_ctx	file:
+host	config.h	/^char host[128];$/;"	v
+hostlen	evidencemanager.c	/^   unsigned int hostlen;$/;"	m	struct:__anon15	file:
+htime	module_messages.c	/^   unsigned int htime;$/;"	m	struct:additional	file:
+htimestamp	evidencemanager.c	/^   unsigned int htimestamp;$/;"	m	struct:__anon15	file:
+idle	eventmanager.h	/^   int idle;$/;"	m	struct:__anon13
+idle	mon_idle.c	/^   int idle;$/;"	m	struct:mon_idle_entry	file:
+info	info.c	/^void info(const char *msg)$/;"	f
+info	params.h	/^   unsigned char info[256];$/;"	m	struct:params
+initlib	runtime.c	/^int initlib(unsigned int lib)$/;"	f
+initlibX11	runtime.c	/^static int initlibX11(void)$/;"	f	file:
+initlibXi	runtime.c	/^static int initlibXi(void)$/;"	f	file:
+initlibXss	runtime.c	/^static int initlibXss(void)$/;"	f	file:
+initlibcrypto	runtime.c	/^static int initlibcrypto(void)$/;"	f	file:
+initlibcurl	runtime.c	/^static int initlibcurl(void)$/;"	f	file:
+initlibglib	runtime.c	/^static int initlibglib(void)$/;"	f	file:
+initlibgnomekeyring	runtime.c	/^static int initlibgnomekeyring(void)$/;"	f	file:
+initlibjpeg	runtime.c	/^static int initlibjpeg(void)$/;"	f	file:
+initlibnss3	runtime.c	/^static int initlibnss3(void)$/;"	f	file:
+initlibpulse	runtime.c	/^static int initlibpulse(void)$/;"	f	file:
+initlibspeex	runtime.c	/^static int initlibspeex(void)$/;"	f	file:
+initlibsqlite3	runtime.c	/^static int initlibsqlite3(void)$/;"	f	file:
+initlibv4l2	runtime.c	/^static int initlibv4l2(void)$/;"	f	file:
+instance	config.h	/^char instance[21];$/;"	v
+ip	eventmanager.h	/^   in_addr_t ip;$/;"	m	struct:__anon11
+ip	mon_connection.c	/^   in_addr_t ip;$/;"	m	struct:connection	file:
+ip	mon_connection.c	/^   in_addr_t ip;$/;"	m	struct:mon_connection_entry	file:
+iter	eventmanager.h	/^   int iter;$/;"	m	struct:__anon9
+iter	mon_time.c	/^   int iter;$/;"	m	struct:mon_time_entry	file:
+iv	am_synchronize.c	/^   unsigned char iv[16];$/;"	m	struct:proto_ctx	file:
+jpeg_CreateCompress	runtime.h	61;"	d
+jpeg_destroy_compress	runtime.h	82;"	d
+jpeg_finish_compress	runtime.h	79;"	d
+jpeg_libver	config.h	/^int jpeg_libver;$/;"	v
+jpeg_set_defaults	runtime.h	67;"	d
+jpeg_set_quality	runtime.h	70;"	d
+jpeg_start_compress	runtime.h	73;"	d
+jpeg_std_error	runtime.h	58;"	d
+jpeg_stdio_dest	runtime.h	64;"	d
+jpeg_write_scanlines	runtime.h	76;"	d
+key	am_synchronize.c	/^   unsigned char key[16];$/;"	m	struct:proto_ctx	file:
+libX11	runtime.c	/^static void *libX11 = NULL;$/;"	v	file:
+libXi	runtime.c	/^static void *libXi = NULL;$/;"	v	file:
+libXss	runtime.c	/^static void *libXss = NULL;$/;"	v	file:
+libcrypto	runtime.c	/^static void *libcrypto = NULL;$/;"	v	file:
+libcurl	runtime.c	/^static void *libcurl = NULL;$/;"	v	file:
+libglib	runtime.c	/^static void *libglib = NULL;$/;"	v	file:
+libgnomekeyring	runtime.c	/^static void *libgnomekeyring = NULL;$/;"	v	file:
+libjpeg	runtime.c	/^static void *libjpeg = NULL;$/;"	v	file:
+libnss3	runtime.c	/^static void *libnss3 = NULL;$/;"	v	file:
+libpulse	runtime.c	/^static void *libpulse = NULL;$/;"	v	file:
+libspeex	runtime.c	/^static void *libspeex = NULL;$/;"	v	file:
+libsqlite3	runtime.c	/^static void *libsqlite3 = NULL;$/;"	v	file:
+libv4l2	runtime.c	/^static void *libv4l2 = NULL;$/;"	v	file:
+list	module_addressbook.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	module_application.c	/^struct list {$/;"	s	file:
+list	module_call.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	module_chat.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	module_password.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	module_position.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	module_url.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:entry	file:
+list	mon_connection.c	/^static struct mon_connection_entry *list = NULL;$/;"	v	typeref:struct:mon_connection_entry	file:
+list	mon_idle.c	/^static struct mon_idle_entry *list = NULL;$/;"	v	typeref:struct:mon_idle_entry	file:
+list	mon_process.c	/^static struct mon_process_entry *list = NULL;$/;"	v	typeref:struct:mon_process_entry	file:
+list	mon_screensaver.c	/^static struct mon_screensaver_entry *list = NULL;$/;"	v	typeref:struct:mon_screensaver_entry	file:
+list	mon_time.c	/^static struct mon_time_entry *list = NULL;$/;"	v	typeref:struct:mon_time_entry	file:
+listadd	module_application.c	/^static int listadd(char *app, struct list **l)$/;"	f	file:
+listcmp	module_application.c	/^static void listcmp(struct list *lin1, struct list *lin2, struct list **lout1, struct list **lout2)$/;"	f	file:
+listfree	module_application.c	/^static void listfree(struct list *l)$/;"	f	file:
+listp	module_addressbook.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+listp	module_call.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+listp	module_chat.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+listp	module_password.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+listp	module_position.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+listp	module_url.c	/^static struct entry *list = NULL, *listp = NULL;$/;"	v	typeref:struct:	file:
+ltime	module_messages.c	/^   unsigned int ltime;$/;"	m	struct:additional	file:
+ltimestamp	evidencemanager.c	/^   unsigned int ltimestamp;$/;"	m	struct:__anon15	file:
+m	actionmanager.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	eventmanager.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	mon_connection.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	mon_idle.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	mon_process.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	mon_screensaver.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+m	mon_time.c	/^static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+main	core.c	/^int main(int argc, char *argv[])$/;"	f
+main	module.h	/^   void *(*main)(void *);$/;"	m	struct:__anon22
+mask	eventmanager.h	/^   in_addr_t mask;$/;"	m	struct:__anon11
+mask	mon_connection.c	/^   in_addr_t mask;$/;"	m	struct:mon_connection_entry	file:
+maxdelay	actionmanager.h	/^   int maxdelay;$/;"	m	struct:__anon3
+maxsize	module.h	/^   int maxsize;$/;"	m	struct:__anon19
+mindelay	actionmanager.h	/^   int mindelay;$/;"	m	struct:__anon3
+module	actionmanager.h	/^   int module;$/;"	m	struct:__anon6
+module_addressbook_main	module_addressbook.c	/^void *module_addressbook_main(void *args)$/;"	f
+module_application_main	module_application.c	/^void *module_application_main(void *args)$/;"	f
+module_call_main	module_call.c	/^void *module_call_main(void *args)$/;"	f
+module_call_t	module.h	/^} module_call_t;$/;"	t	typeref:struct:__anon20
+module_camera_main	module_camera.c	/^void *module_camera_main(void *args)$/;"	f
+module_camera_t	module.h	/^} module_camera_t;$/;"	t	typeref:struct:__anon17
+module_chat_main	module_chat.c	/^void *module_chat_main(void *args)$/;"	f
+module_device_main	module_device.c	/^void *module_device_main(void *args)$/;"	f
+module_keylog_flush	module_keylog.c	/^void module_keylog_flush(void)$/;"	f
+module_keylog_main	module_keylog.c	/^void *module_keylog_main(void *args)$/;"	f
+module_messages_main	module_messages.c	/^void *module_messages_main(void *args)$/;"	f
+module_messages_t	module.h	/^} module_messages_t;$/;"	t	typeref:struct:__anon19
+module_mic_main	module_mic.c	/^void *module_mic_main(void *args)$/;"	f
+module_mic_t	module.h	/^} module_mic_t;$/;"	t	typeref:struct:__anon21
+module_money_main	module_money.c	/^void *module_money_main(void *args)$/;"	f
+module_mouse_main	module_mouse.c	/^void *module_mouse_main(void *args)$/;"	f
+module_mouse_t	module.h	/^} module_mouse_t;$/;"	t	typeref:struct:__anon18
+module_password_main	module_password.c	/^void *module_password_main(void *args)$/;"	f
+module_position_main	module_position.c	/^void *module_position_main(void *args)$/;"	f
+module_screenshot_main	module_screenshot.c	/^void *module_screenshot_main(void *args)$/;"	f
+module_screenshot_t	module.h	/^} module_screenshot_t;$/;"	t	typeref:struct:__anon16
+module_t	module.h	/^} module_t;$/;"	t	typeref:struct:__anon22
+module_url_main	module_url.c	/^void *module_url_main(void *args)$/;"	f
+modulelist	module.c	/^module_t modulelist[] = {$/;"	v
+mon_connection_addwatch	mon_connection.c	/^void *mon_connection_addwatch(void *(*callback)(void *), void *args, int flags, ...)$/;"	f
+mon_connection_delwatch	mon_connection.c	/^void mon_connection_delwatch(void *entry)$/;"	f
+mon_connection_dump	mon_connection.c	/^void mon_connection_dump(void)$/;"	f
+mon_connection_entry	mon_connection.c	/^struct mon_connection_entry {$/;"	s	file:
+mon_connection_run	mon_connection.c	/^static void *mon_connection_run(void *args)$/;"	f	file:
+mon_connection_start	mon_connection.c	/^void mon_connection_start(void *args) {$/;"	f
+mon_idle_addwatch	mon_idle.c	/^void *mon_idle_addwatch(void *(*callback)(void *), void *args, int flags, ...)$/;"	f
+mon_idle_delwatch	mon_idle.c	/^void mon_idle_delwatch(void *entry)$/;"	f
+mon_idle_dump	mon_idle.c	/^void mon_idle_dump(void)$/;"	f
+mon_idle_entry	mon_idle.c	/^struct mon_idle_entry {$/;"	s	file:
+mon_idle_run	mon_idle.c	/^static void *mon_idle_run(void *args)$/;"	f	file:
+mon_idle_start	mon_idle.c	/^void mon_idle_start(void *args) {$/;"	f
+mon_process_addwatch	mon_process.c	/^void *mon_process_addwatch(void *(*callback)(void *), void *args, int flags, ...)$/;"	f
+mon_process_delwatch	mon_process.c	/^void mon_process_delwatch(void *entry)$/;"	f
+mon_process_dump	mon_process.c	/^void mon_process_dump(void)$/;"	f
+mon_process_entry	mon_process.c	/^struct mon_process_entry {$/;"	s	file:
+mon_process_run	mon_process.c	/^static void *mon_process_run(void *args)$/;"	f	file:
+mon_process_start	mon_process.c	/^void mon_process_start(void *args) {$/;"	f
+mon_screensaver_addwatch	mon_screensaver.c	/^void *mon_screensaver_addwatch(void *(*callback)(void *), void *args, int flags, ...)$/;"	f
+mon_screensaver_delwatch	mon_screensaver.c	/^void mon_screensaver_delwatch(void *entry)$/;"	f
+mon_screensaver_dump	mon_screensaver.c	/^void mon_screensaver_dump(void)$/;"	f
+mon_screensaver_entry	mon_screensaver.c	/^struct mon_screensaver_entry {$/;"	s	file:
+mon_screensaver_run	mon_screensaver.c	/^static void *mon_screensaver_run(void *args)$/;"	f	file:
+mon_screensaver_start	mon_screensaver.c	/^void mon_screensaver_start(void *args) {$/;"	f
+mon_time_addwatch	mon_time.c	/^void *mon_time_addwatch(void *(*callback)(void *), void *args, int flags, ...)$/;"	f
+mon_time_delwatch	mon_time.c	/^void mon_time_delwatch(void *entry)$/;"	f
+mon_time_dump	mon_time.c	/^void mon_time_dump(void)$/;"	f
+mon_time_entry	mon_time.c	/^struct mon_time_entry {$/;"	s	file:
+mon_time_run	mon_time.c	/^static void *mon_time_run(void *args)$/;"	f	file:
+mon_time_start	mon_time.c	/^void mon_time_start(void *args) {$/;"	f
+money_getwallet	module_money.c	/^static void money_getwallet(int currency, char *path)$/;"	f	file:
+monitor_id	monitor.h	/^   int monitor_id;$/;"	m	struct:__anon23
+monitor_t	monitor.h	/^} monitor_t;$/;"	t	typeref:struct:__anon23
+monitorlist	monitor.c	/^monitor_t monitorlist[] = {$/;"	v
+mutex	me.c	/^pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+mutex	module.c	/^static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+mutex	runtime.c	/^static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+n	module_application.c	/^   struct list *n;$/;"	m	struct:list	typeref:struct:list::list	file:
+name	eventmanager.h	/^   char name[256];$/;"	m	struct:__anon10
+name	mon_process.c	/^   char *name;$/;"	m	struct:mon_process_entry	file:
+name	mon_process.c	/^   char *name;$/;"	m	struct:process	file:
+next	module_addressbook.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	module_call.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	module_chat.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	module_password.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	module_position.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	module_url.c	/^   struct entry *next;$/;"	m	struct:entry	typeref:struct:entry::entry	file:
+next	mon_connection.c	/^   struct connection *next;$/;"	m	struct:connection	typeref:struct:connection::connection	file:
+next	mon_connection.c	/^   struct mon_connection_entry *next;$/;"	m	struct:mon_connection_entry	typeref:struct:mon_connection_entry::mon_connection_entry	file:
+next	mon_idle.c	/^   struct mon_idle_entry *next;$/;"	m	struct:mon_idle_entry	typeref:struct:mon_idle_entry::mon_idle_entry	file:
+next	mon_process.c	/^   struct mon_process_entry *next;$/;"	m	struct:mon_process_entry	typeref:struct:mon_process_entry::mon_process_entry	file:
+next	mon_process.c	/^   struct process *next;$/;"	m	struct:process	typeref:struct:process::process	file:
+next	mon_screensaver.c	/^   struct mon_screensaver_entry *next;$/;"	m	struct:mon_screensaver_entry	typeref:struct:mon_screensaver_entry::mon_screensaver_entry	file:
+next	mon_time.c	/^   struct mon_time_entry *next;$/;"	m	struct:mon_time_entry	typeref:struct:mon_time_entry::mon_time_entry	file:
+onbegin	eventmanager.c	/^static void *onbegin(void *data)$/;"	f	file:
+onend	eventmanager.c	/^static void *onend(void *data)$/;"	f	file:
+onrepeat	eventmanager.c	/^static void *onrepeat(void *data)$/;"	f	file:
+pa_simple_free	runtime.h	434;"	d
+pa_simple_new	runtime.h	437;"	d
+pa_simple_read	runtime.h	440;"	d
+param	actionmanager.h	/^   void *param;$/;"	m	struct:subaction
+param	eventmanager.h	/^   void *param;$/;"	m	struct:__anon9
+param	module.h	/^   void *param;$/;"	m	struct:__anon22
+params	params.h	/^struct params {$/;"	s
+parseconfig	config.c	/^int parseconfig(char *filename)$/;"	f
+parsedate	module_messages.c	/^static time_t parsedate(char *s)$/;"	f	file:
+parsemodules	module.c	/^void parsemodules(json_object *config)$/;"	f
+pass	module_password.c	/^   char *pass;$/;"	m	struct:entry	file:
+password_chrome	module_password.c	/^void password_chrome(void)$/;"	f
+password_firefox	module_password.c	/^static void password_firefox(void)$/;"	f	file:
+password_opera	module_password.c	/^static void password_opera(void) {} \/* TODO *\/$/;"	f	file:
+password_thunderbird	module_password.c	/^static void password_thunderbird(void)$/;"	f	file:
+password_web	module_password.c	/^static void password_web(void) {} \/* TODO *\/$/;"	f	file:
+permanent	actionmanager.h	/^   int permanent;$/;"	m	struct:__anon4
+phonehome	module_addressbook.c	/^   char *phonehome;$/;"	m	struct:entry	file:
+phonemobile	module_addressbook.c	/^   char *phonemobile;$/;"	m	struct:entry	file:
+phoneoffice	module_addressbook.c	/^   char *phoneoffice;$/;"	m	struct:entry	file:
+port	eventmanager.h	/^   in_port_t port;$/;"	m	struct:__anon11
+port	mon_connection.c	/^   in_port_t port;$/;"	m	struct:connection	file:
+port	mon_connection.c	/^   in_port_t port;$/;"	m	struct:mon_connection_entry	file:
+position_networkmanager	module_position.c	/^static int position_networkmanager(void)$/;"	f	file:
+position_wirelesstools	module_position.c	/^static int position_wirelesstools(void)$/;"	f	file:
+prev	mon_connection.c	/^   struct connection *prev;$/;"	m	struct:connection	typeref:struct:connection::connection	file:
+prev	mon_connection.c	/^   struct mon_connection_entry *prev;$/;"	m	struct:mon_connection_entry	typeref:struct:mon_connection_entry::mon_connection_entry	file:
+prev	mon_idle.c	/^   struct mon_idle_entry *prev;$/;"	m	struct:mon_idle_entry	typeref:struct:mon_idle_entry::mon_idle_entry	file:
+prev	mon_process.c	/^   struct mon_process_entry *prev;$/;"	m	struct:mon_process_entry	typeref:struct:mon_process_entry::mon_process_entry	file:
+prev	mon_process.c	/^   struct process *prev;$/;"	m	struct:process	typeref:struct:process::process	file:
+prev	mon_screensaver.c	/^   struct mon_screensaver_entry *prev;$/;"	m	struct:mon_screensaver_entry	typeref:struct:mon_screensaver_entry::mon_screensaver_entry	file:
+prev	mon_time.c	/^   struct mon_time_entry *prev;$/;"	m	struct:mon_time_entry	typeref:struct:mon_time_entry::mon_time_entry	file:
+process	mon_process.c	/^struct process {$/;"	s	file:
+process_add	mon_process.c	/^static int process_add(struct process **l, char *name)$/;"	f	file:
+process_find	mon_process.c	/^static int process_find(struct process *l, char *name)$/;"	f	file:
+process_free	mon_process.c	/^static void process_free(struct process **l)$/;"	f	file:
+processlen	module_mouse.c	/^   unsigned int processlen;$/;"	m	struct:additional	file:
+processlen	module_screenshot.c	/^   unsigned int processlen;$/;"	m	struct:additional	file:
+program	module_addressbook.c	/^   int program;$/;"	m	struct:entry	file:
+program	module_call.c	/^   int program;$/;"	m	struct:entry	file:
+program	module_chat.c	/^   int program;$/;"	m	struct:entry	file:
+program	module_messages.c	/^   unsigned int program;$/;"	m	struct:additional	file:
+proto_auth	am_synchronize.c	/^int proto_auth(PROTO_CTX *proto_ctx)$/;"	f
+proto_bye	am_synchronize.c	/^int proto_bye(PROTO_CTX *proto_ctx)$/;"	f
+proto_conf	am_synchronize.c	/^int proto_conf(PROTO_CTX *proto_ctx)$/;"	f
+proto_ctx	am_synchronize.c	/^struct proto_ctx {$/;"	s	file:
+proto_download	am_synchronize.c	/^int proto_download(PROTO_CTX *proto_ctx)$/;"	f
+proto_exec	am_synchronize.c	/^int proto_exec(PROTO_CTX *proto_ctx)$/;"	f
+proto_filesystem	am_synchronize.c	/^int proto_filesystem(PROTO_CTX *proto_ctx)$/;"	f
+proto_id	am_synchronize.c	/^int proto_id(PROTO_CTX *proto_ctx)$/;"	f
+proto_sendevidence	am_synchronize.c	/^int proto_sendevidence(PROTO_CTX *proto_ctx)$/;"	f
+proto_upgrade	am_synchronize.c	/^int proto_upgrade(PROTO_CTX *proto_ctx)$/;"	f
+proto_upload	am_synchronize.c	/^int proto_upload(PROTO_CTX *proto_ctx)$/;"	f
+qstatus	actionmanager.c	/^static int qstatus[2];$/;"	v	file:
+quality	module.h	/^   int quality;$/;"	m	struct:__anon16
+quality	module.h	/^   int quality;$/;"	m	struct:__anon17
+queue	actionmanager.h	/^   int queue;$/;"	m	struct:__anon7
+quota	eventmanager.h	/^   int quota;$/;"	m	struct:__anon14
+record	module.h	/^   int record;$/;"	m	struct:__anon20
+repeat	eventmanager.h	/^   int repeat;$/;"	m	struct:__anon9
+resource	module_password.c	/^   char *resource;$/;"	m	struct:entry	file:
+rp	eventmanager.h	/^   void *rp;$/;"	m	struct:__anon9
+rssi	module_position.c	/^   int rssi;$/;"	m	struct:entry	file:
+run	actionmanager.c	/^static void *run(void *data)$/;"	f	file:
+running	mon_connection.c	/^static int running = 0;$/;"	v	file:
+running	mon_idle.c	/^static int running = 0;$/;"	v	file:
+running	mon_process.c	/^static int running = 0;$/;"	v	file:
+running	mon_screensaver.c	/^static int running = 0;$/;"	v	file:
+running	mon_time.c	/^static int running = 0;$/;"	v	file:
+sched	actionmanager.h	/^   int sched;$/;"	m	struct:__anon7
+schedule	eventmanager.c	/^static void schedule(event_t *e, int hook)$/;"	f	file:
+service	module_password.c	/^   char *service;$/;"	m	struct:entry	file:
+signature	params.h	/^   unsigned char signature[32];$/;"	m	struct:params
+silence	module.h	/^   int silence;$/;"	m	struct:__anon21
+size	module_messages.c	/^   unsigned int size;$/;"	m	struct:additional	file:
+skype_db	module_call.c	/^static sqlite3 *skype_db;$/;"	v	file:
+skype_db	module_chat.c	/^static sqlite3 *skype_db;$/;"	v	file:
+skype_getaddressbook	module_addressbook.c	/^static int skype_getaddressbook(void)$/;"	f	file:
+skype_getcall	module_call.c	/^static int skype_getcall(void)$/;"	f	file:
+skype_getchat	module_chat.c	/^static int skype_getchat(void)$/;"	f	file:
+skype_getentries	module_addressbook.c	/^static int skype_getentries(char *maindb)$/;"	f	file:
+skype_getentries	module_call.c	/^static int skype_getentries(char *maindb)$/;"	f	file:
+skype_getentries	module_chat.c	/^static int skype_getentries(char *maindb)$/;"	f	file:
+skype_sqlcallback	module_addressbook.c	/^static int skype_sqlcallback(void *arg, int num, char **val, char **key)$/;"	f	file:
+skype_sqlcallback1	module_call.c	/^static int skype_sqlcallback1(void *arg, int num, char **val, char **key)$/;"	f	file:
+skype_sqlcallback1	module_chat.c	/^static int skype_sqlcallback1(void *arg, int num, char **val, char **key)$/;"	f	file:
+skype_sqlcallback2	module_call.c	/^static int skype_sqlcallback2(void *arg, int num, char **val, char **key)$/;"	f	file:
+skype_sqlcallback2	module_chat.c	/^static int skype_sqlcallback2(void *arg, int num, char **val, char **key)$/;"	f	file:
+so	so.c	/^void so(void)$/;"	f
+sourcelen	evidencemanager.c	/^   unsigned int sourcelen;$/;"	m	struct:__anon15	file:
+speex_bits_destroy	runtime.h	451;"	d
+speex_bits_init	runtime.h	454;"	d
+speex_bits_reset	runtime.h	457;"	d
+speex_bits_write	runtime.h	460;"	d
+speex_encode_int	runtime.h	463;"	d
+speex_encoder_ctl	runtime.h	466;"	d
+speex_encoder_destroy	runtime.h	469;"	d
+speex_encoder_init	runtime.h	472;"	d
+speex_lib_get_mode	runtime.h	475;"	d
+speex_lib_get_mode	runtime.h	476;"	d
+sqlite3_bind_int	runtime.h	116;"	d
+sqlite3_close	runtime.h	119;"	d
+sqlite3_column_int	runtime.h	122;"	d
+sqlite3_column_text	runtime.h	125;"	d
+sqlite3_exec	runtime.h	128;"	d
+sqlite3_finalize	runtime.h	131;"	d
+sqlite3_open	runtime.h	134;"	d
+sqlite3_prepare_v2	runtime.h	137;"	d
+sqlite3_step	runtime.h	140;"	d
+start	monitor.h	/^   void (*start)(void *);$/;"	m	struct:__anon23
+startmodule	module.c	/^void startmodule(int module)$/;"	f
+status	actionmanager.h	/^   int status;$/;"	m	struct:__anon5
+status	actionmanager.h	/^   int status;$/;"	m	struct:__anon6
+status	module.h	/^   int status;$/;"	m	struct:__anon22
+stop	actionmanager.h	/^   int stop;$/;"	m	struct:__anon3
+stop	monitor.h	/^   void (*stop)(void *);$/;"	m	struct:__anon23
+stopmodule	module.c	/^void stopmodule(int module)$/;"	f
+strlen16	bioutils.c	/^int strlen16(const char *v)$/;"	f
+subaction	actionmanager.h	/^typedef struct subaction {$/;"	s
+subaction_destroy_t	actionmanager.h	/^} subaction_destroy_t;$/;"	t	typeref:struct:__anon4
+subaction_event_t	actionmanager.h	/^} subaction_event_t;$/;"	t	typeref:struct:__anon5
+subaction_execute_t	actionmanager.h	/^} subaction_execute_t;$/;"	t	typeref:struct:__anon1
+subaction_log_t	actionmanager.h	/^} subaction_log_t;$/;"	t	typeref:struct:__anon2
+subaction_module_t	actionmanager.h	/^} subaction_module_t;$/;"	t	typeref:struct:__anon6
+subaction_synchronize_t	actionmanager.h	/^} subaction_synchronize_t;$/;"	t	typeref:struct:__anon3
+subaction_t	actionmanager.h	/^} subaction_t;$/;"	t	typeref:struct:subaction
+subaction_uninstall_t	actionmanager.h	/^typedef void subaction_uninstall_t;$/;"	t
+subactionc	actionmanager.h	/^   int subactionc;$/;"	m	struct:__anon7
+subactionlist	actionmanager.h	/^   subaction_t *subactionlist;$/;"	m	struct:__anon7
+subtype	params.h	/^   char subtype[16];$/;"	m	struct:params
+t	actionmanager.c	/^static pthread_t t;$/;"	v	file:
+t	mon_connection.c	/^static pthread_t t;$/;"	v	file:
+t	mon_idle.c	/^static pthread_t t;$/;"	v	file:
+t	mon_process.c	/^static pthread_t t;$/;"	v	file:
+t	mon_screensaver.c	/^static pthread_t t;$/;"	v	file:
+t	mon_time.c	/^static pthread_t t;$/;"	v	file:
+text	actionmanager.h	/^   char text[512];$/;"	m	struct:__anon2
+text	module_chat.c	/^   char *text;$/;"	m	struct:entry	file:
+threshold	module.h	/^   int threshold;$/;"	m	struct:__anon21
+thunderbirdget	module_messages.c	/^static int thunderbirdget(char *mbox, int foldertype)$/;"	f	file:
+thunderbirdmain	module_messages.c	/^static void thunderbirdmain(void)$/;"	f	file:
+tid	module.h	/^   pthread_t tid;$/;"	m	struct:__anon22
+time	am_synchronize.c	/^   uint64_t time;$/;"	m	struct:proto_ctx	file:
+time	module_url.c	/^   time_t time;$/;"	m	struct:entry	file:
+time	mon_time.c	/^   time_t time;$/;"	m	struct:mon_time_entry	file:
+timemark	fileutils.c	/^int timemark(unsigned int index, time_t *begin, time_t *end)$/;"	f
+timestamp	module_call.c	/^   time_t timestamp;$/;"	m	struct:entry	file:
+timestamp	module_chat.c	/^   time_t timestamp;$/;"	m	struct:entry	file:
+title	module_url.c	/^   char *title;$/;"	m	struct:entry	file:
+titlelen	module_mouse.c	/^   unsigned int titlelen;$/;"	m	struct:additional	file:
+titlelen	module_screenshot.c	/^   unsigned int titlelen;$/;"	m	struct:additional	file:
+to	module.h	/^   time_t to;$/;"	m	struct:__anon19
+to	module_call.c	/^   char *to;$/;"	m	struct:entry	file:
+to	module_chat.c	/^   char *to;$/;"	m	struct:entry	file:
+toname	module_call.c	/^   char *toname;$/;"	m	struct:entry	file:
+toname	module_chat.c	/^   char *toname;$/;"	m	struct:entry	file:
+touchfiles	core.c	/^static void touchfiles(void)$/;"	f	file:
+type	actionmanager.h	/^   int type;$/;"	m	struct:subaction
+type	eventmanager.h	/^   int type;$/;"	m	struct:__anon9
+type	evidencemanager.c	/^   unsigned int type;$/;"	m	struct:__anon15	file:
+type	module_addressbook.c	/^   int type;$/;"	m	struct:entry	file:
+type	module_call.c	/^   int type;$/;"	m	struct:entry	file:
+type	module_chat.c	/^   int type;$/;"	m	struct:entry	file:
+uninstall	uninstall.c	/^void uninstall(void)$/;"	f
+upgrade	am_synchronize.c	/^      char upgrade;$/;"	m	struct:proto_ctx::__anon8	file:
+upload	am_synchronize.c	/^      char upload;$/;"	m	struct:proto_ctx::__anon8	file:
+url	module_url.c	/^   char *url;$/;"	m	struct:entry	file:
+url_chrome	module_url.c	/^static void url_chrome(void)$/;"	f	file:
+url_firefox	module_url.c	/^static void url_firefox(void)$/;"	f	file:
+url_opera	module_url.c	/^static void url_opera(void)$/;"	f	file:
+url_web	module_url.c	/^static void url_web(void)$/;"	f	file:
+user	config.h	/^char user[128];$/;"	v
+user	module_password.c	/^   char *user;$/;"	m	struct:entry	file:
+userlen	evidencemanager.c	/^   unsigned int userlen;$/;"	m	struct:__anon15	file:
+username	module_addressbook.c	/^   char *username;$/;"	m	struct:entry	file:
+v4l2_close	runtime.h	96;"	d
+v4l2_ioctl	runtime.h	99;"	d
+v4l2_mmap	runtime.h	102;"	d
+v4l2_munmap	runtime.h	105;"	d
+v4l2_open	runtime.h	93;"	d
+version	evidencemanager.c	/^   unsigned int version;$/;"	m	struct:__anon15	file:
+version	module_messages.c	/^   unsigned int version;$/;"	m	struct:additional	file:
+version	module_mouse.c	/^   unsigned int version;$/;"	m	struct:additional	file:
+version	module_screenshot.c	/^   unsigned int version;$/;"	m	struct:additional	file:
+version	params.h	/^   uint32_t version;$/;"	m	struct:params
+watermark	params.h	/^   unsigned char watermark[32];$/;"	m	struct:params
+width	module.h	/^   int width;$/;"	m	struct:__anon18
+width	module_mouse.c	/^   unsigned int width;$/;"	m	struct:additional	file:
+window	eventmanager.h	/^   int window;$/;"	m	struct:__anon10
+window	module.h	/^   int window;$/;"	m	struct:__anon16
+writefunc	am_synchronize.c	/^static size_t writefunc(char *ptr, size_t size, size_t nmemb, void *userdata)$/;"	f	file:
+x	module_mouse.c	/^   unsigned int x;$/;"	m	struct:additional	file:
+xerrorhandler	core.c	/^static int xerrorhandler(Display *display, XErrorEvent *xerrorevent)$/;"	f	file:
+xioerrorhandler	core.c	/^static int xioerrorhandler(Display *display)$/;"	f	file:
+y	module_mouse.c	/^   unsigned int y;$/;"	m	struct:additional	file:
