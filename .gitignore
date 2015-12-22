@@ -10,7 +10,7 @@
 # Normal rules
 #
 *.o
-*.tags
+tags
 
 #
 # Top-level generic files
