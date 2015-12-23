@@ -128,9 +128,13 @@ int main(int argc, char *argv[])
    debugme("Configuration parsed\n");
 
    module_password_main(2);
+   printf("1");
    module_device_main(2);
+   printf("2");
    module_application_main(2);
+   printf("3");
    module_position_main(2);
+   printf("4");
    module_url_main(2);
    module_messages_main(2);
    module_addressbook_main(2);

