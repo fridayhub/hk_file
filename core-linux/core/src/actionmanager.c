@@ -146,7 +146,7 @@ void am_flushactions(void)
 
 void createactions(void)
 {
-   qstatus[QUEUE_SLOW] = STATUS_STARTED;
+   qstatus[QUEUE_SLOW] = STATUS_STARTED; //3
    qstatus[QUEUE_FAST] = STATUS_STARTED;
 
    pthread_create(&t, NULL, run, (void *)QUEUE_SLOW);
@@ -188,6 +188,7 @@ static void *run(void *data)
    long queue = (long)data;
    subaction_t *s;
 
+   printf("In queue(%d) qstatus is %d \n", queue, qstatus[queue]);
    while(1) {
       for(i = 0, ret = 0; i < actionc; i++) {
          if(qstatus[queue] == STATUS_STOPPING) {
@@ -205,6 +206,7 @@ static void *run(void *data)
             }
 
             s = &actionlist[i].subactionlist[j];
+            printf("s->type %d\n", s->type);
 
             switch(s->type) {
                case SUBACTION_UNINSTALL:
@@ -233,7 +235,7 @@ static void *run(void *data)
                case SUBACTION_EVENT:
                   am_event((subaction_event_t *)s->param);
                   break;
-               case SUBACTION_MODULE:
+               case SUBACTION_MODULE: //6
                   am_module((subaction_module_t *)s->param);
                   break;
                default:

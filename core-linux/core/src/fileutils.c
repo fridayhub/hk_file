@@ -45,11 +45,11 @@ int timemark(unsigned int index, time_t *begin, time_t *end)
 
    do {
       if(snprintf(filename, sizeof(filename), SO".tmp.%03u.t", index) >= sizeof(filename)) break;
-      e = time(NULL) - 30;
+      e = time(NULL) - 30;  //获取系统时间，单位为秒
       if(!(fp = fopen(filename, "r+")) && !(fp = fopen(filename, "w+"))) break;
-      if(fscanf(fp, "%ld\n", &b) != 1) b = 0;
-      rewind(fp);
-      if(fprintf(fp, "%ld\n", e) <= 0) break;
+      if(fscanf(fp, "%ld\n", &b) != 1) b = 0; // (write 0 to fp file)从一个流中执行格式化输入,fscanf遇到空格和换行时结束，注意空格时也结束
+      rewind(fp); //set point position to begin
+      if(fprintf(fp, "%ld\n", e) <= 0) break;  
       *begin = b;
       *end = e - 1;
       ret = 0;

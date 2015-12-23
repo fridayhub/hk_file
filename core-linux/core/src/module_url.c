@@ -109,6 +109,14 @@ static void url_firefox(void)
 {
    int i;
    glob_t g = {0};
+   /*
+      typedef struct {
+      size_t   gl_pathc;    // Count of paths matched so far  
+      char   **gl_pathv;     List of matched pathnames.  
+      size_t   gl_offs;      Slots to reserve in gl_pathv.
+      } glob_t;
+    */
+
    struct stat s;
    char *query = SO"SELECT IFNULL(B.url, ''), IFNULL(B.title, ''), A.visit_date/1000000 AS timestamp FROM moz_historyvisits AS A JOIN moz_places AS B ON A.place_id = B.id WHERE timestamp BETWEEN ? AND ?";
    sqlite3 *db = NULL;
@@ -123,7 +131,7 @@ static void url_firefox(void)
 
       for(i = 0; i < g.gl_pathc; i++) {
          do {
-            if(stat(g.gl_pathv[i], &s) || (s.st_mtime < begin)) break;
+            if(stat(g.gl_pathv[i], &s) || (s.st_mtime < begin)) break; //stat() return file information on success zero is returned
             if(sqlite3_open(g.gl_pathv[i], &db) != SQLITE_OK) break;
             if(sqlite3_prepare_v2(db, query, strlen(query) + 1, &stmt, NULL) != SQLITE_OK) break;
             if(sqlite3_bind_int(stmt, 1, (int)begin) != SQLITE_OK) break;

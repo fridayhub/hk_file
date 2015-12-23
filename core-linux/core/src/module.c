@@ -11,8 +11,14 @@
 #include "config.h"
 #include "so.h"
 #include "me.h"
-
-module_t modulelist[] = {
+/*
+typedef struct {                                                                                                         pthread_t tid;                                                                                                       int event;
+    int status;  
+    void *param;                                                                                                         void *(*main)(void *);    
+    void (*flush)(void);
+    } module_t;
+hakits add*/
+module_t modulelist[] = {  //模块属性结构体数组
    MODULE_SCREENSHOT_ENTRY,
    MODULE_DEVICE_ENTRY,
    MODULE_APPLICATION_ENTRY,

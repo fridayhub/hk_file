@@ -171,9 +171,15 @@ void em_flushevents(void)
 void em_scheduleevents(void)
 {
    int i;
+   printf("Just test\n");
+   printf("eventc is :%d \n", eventc);
 
    pthread_mutex_lock(&m);
-   for(i = 0; i < eventc; i++) schedule(&eventlist[i], EVENT_BEGIN);
+   for(i = 0; i < eventc; i++) 
+   {
+       printf("is here\n");
+       schedule(&eventlist[i], EVENT_BEGIN);
+   }
    pthread_mutex_unlock(&m);
 
    return;

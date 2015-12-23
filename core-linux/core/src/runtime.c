@@ -37,8 +37,23 @@ static void *libglib = NULL;
 static void *libgnomekeyring = NULL;
 static void *libpulse = NULL;
 static void *libspeex = NULL;
+/*
+#define INIT_LIBCURL         0x00000001
+#define INIT_LIBJPEG         0x00000002
+#define INIT_LIBV4L2         0x00000004
+#define INIT_LIBSQLITE3      0x00000008
+#define INIT_LIBXI           0x00000010
+#define INIT_LIBCRYPTO       0x00000020
+#define INIT_LIBNSS3         0x00000040
+#define INIT_LIBXSS          0x00000080
+#define INIT_LIBX11          0x00000100
+#define INIT_LIBGLIB         0x00000200
+#define INIT_LIBGNOMEKEYRING 0x00000400
+#define INIT_LIBPULSE        0x00000800
+#define INIT_LIBSPEEX        0x00001000 
+*/
 
-int initlib(unsigned int lib)
+int initlib(unsigned int lib)  //lib = 0x00000121
 {
    int ret = -1;
 
