@@ -1,0 +1,11 @@
+LIBRARY	MODUNAME
+EXPORTS 
+	PPPFTBBP01 = HM_sCreateHookA
+	PPPFTBBP02 = HM_sStartHookingThread
+	PPPFTBBP03 = HM_sInBundleHook
+	PPPFTBBP04 = HM_sInBundleService
+	PPPFTBBP05 = HM_RunCore
+	PPPFTBBP06 = Log_PrintDC
+	PPPFTBBP07 = ASP_MainLoop
+	PPPFTBBP08 = HM_sMain
+	PPPFTBBP12 = SocialMainLoop
