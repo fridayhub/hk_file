@@ -440,7 +440,7 @@ DWORD AM_Startup()
 
 	if (ret_val) {
 		LOG_InitLog();
-		InitializeCriticalSection(&hide_critic_sec);
+		InitializeCriticalSection(&hide_critic_sec); //初始化一个临界资源对象
 		InitAgents();
 		return 1;
 	}

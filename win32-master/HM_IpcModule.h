@@ -289,13 +289,13 @@ message_struct *IPCServerPeek()
 }
 
 
-// Rimuove dalla coda un messaggio preso con IPCServerPeek
+// Remove from the queue a message taken with IPCServerPeek
 void IPCServerRemove(message_struct *msg) 
 {
 	msg->status = STATUS_FREE;
 }
 
-// Se la shared memory gia' esiste ritorna FALSE
+// If the shared memory already 'exists returns FALSE
 BOOL IPCServerInit() 
 {
 	HANDLE h_file;
